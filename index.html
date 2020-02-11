@@ -1,0 +1,4762 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<head>
+  <title>Import Results Dashboard </title>
+  <meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1">
+  <meta name="CODE_LANGUAGE" content="C#">
+  <meta name="vs_defaultClientScript" content="JavaScript">
+  <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+  <link rel="SHORTCUT ICON" href="dist/favicon.ico" />
+  <link href="dist/assets/css/app.min.css" type="text/css" rel="stylesheet">
+  <!--<link href="dist/assets/fonts/css/icomoon.css" type="text/css" rel="stylesheet">-->
+  <script src="dist/assets/js/app.min.js"></script>
+</head>
+<body id="hlcBody" onbeforeunload="">
+<form name="Form1" method="post" action="./ServicesMainMenu.aspx" id="Form1">
+  <div id="ph" class="ph">
+  </div>
+  <table class="" width="100%" border="0" cellpadding="0" cellspacing="0" id="identity-bar">
+    <tbody>
+    <tr>
+      <td height="23" class="txxs" style="padding-left:7px;">
+        <strong>Institution:</strong> Acme General Hospital
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <div id="mb">
+    <div id="mb_n" class="nm tabs txs">
+      <div class="nb" style="content:'';clear:both;display:block;">
+      </div>
+    </div>
+  </div>
+  <style>
+  </style>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm">
+        <div class="row">
+          <div class="col">
+            <h2>Import Results <small class="import-results-date-range-label"> - Last 24 Hours</small></h2>
+          </div>
+          <div class="col-1 date-range">
+            <label class="col-form-label">Date Range:</label>
+          </div>
+          <div class="col-2">
+            <select class="form-control date-range__control">
+              <!-- <optgroup label="Presets"> -->
+              <option selected="">Last 24 hours</option>
+              <option>Last 72 hours</option>
+              <option>Last 7 days</option>
+              <option>Last 14 days</option>
+              <option>Last 30 days</option>
+              <!-- </optgroup> -->
+              <!-- <optgroup label="Custom"> -->
+              <option value="custom" class="custom-date-range-option">Custom Range</option>
+              <!-- </optgroup> -->
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 text-right">
+            <a href="#"
+               class="d-none change-date-range">Change</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="d-flex import-result-heading p-0 col-sm">Student Import &nbsp;<small> (7 files)</small>
+          <div class="ml-auto">
+            <a href="#"><span class="icon-refresh"></span></a>
+            <a href="#"><span class="icon-download"></span></a>
+            <a href="#schedule-student-import" data-toggle="modal"><span
+                class="icon-calendar-plus-o"></span></a>
+          </div>
+        </div>
+        <div class="row pr-sm-4">
+          <div class="col-sm pr-0">
+            <a href="#modal-student-import-progress" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result">In&nbsp;Progress</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">100000</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 5%;background-color:#F0C109">
+                  <span class="sr-only">5% In Progress</span>
+                </div>
+                <span class="import-result-percent">5%</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm pr-0">
+            <a href="#modal-student-import-success" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Success</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">698</div>
+                </div>
+              </div>
+              <div class="progress row">
+                <div class="progress-bar progress-bar-success" style="width: 64%">
+                  <span class="sr-only">64% Success</span>
+                  <span class="import-result-percent">64%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm pr-0">
+            <a href="#modal-student-import-error" data-toggle="modal"
+               class="import-result-container import-result-error">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Error</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">390</div>
+                </div>
+              </div>
+              <div class="progress row">
+                <div class="progress-bar progress-bar-danger" style="width: 36%">
+                  <span class="sr-only">36% Error</span>
+                  <span class="import-result-percent">36%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="d-flex import-result-heading p-0 col-sm">Student Job Function &nbsp;<small> (3 files)</small>
+              <div class="ml-auto">
+                <a href="#"><span class="icon-refresh"></span></a>
+                <a href="#"><span class="icon-download"></span></a>
+                <a href="schedule-student-import" data-toggle="modal"><span
+                    class="icon-calendar-plus-o"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pr-sm-4">
+          <div class="col-sm pr-0">
+            <a href="#modal-job-function-progress" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result">In&nbsp;Progress</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">10</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 5%;background-color:#F0C109">
+                  <span class="sr-only">5% In Progress</span>
+                  <span class="import-result-percent">5%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm pr-0">
+            <a href="#modal-job-function-success" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Success</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">698</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 64%">
+                  <span class="sr-only">64% Success</span>
+                  <span class="import-result-percent">64%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm pr-0">
+            <a href="#modal-job-function-error" data-toggle="modal" class="import-result-container import-result-error">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Error</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">390</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-danger" style="width: 36%">
+                  <span class="sr-only">36% Error</span>
+                  <span class="import-result-percent">36%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="d-flex import-result-heading p-0 col-sm">Role Import <small>&nbsp; (7 files)</small>
+              <div class="ml-auto">
+                <a href="#"><span class="icon-refresh"></span></a>
+                <a href="#"><span class="icon-download"></span></a>
+                <a href="#" id="schedule-role-import" data-toggle="modal"><span
+                    class="icon-calendar-plus-o"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pr-sm-4">
+          <div class="col-sm pr-0">
+            <a href="#modal-role-import-progress" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result">In&nbsp;Progress</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">10</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 5%;background-color:#F0C109">
+                  <span class="sr-only">5% In Progress</span>
+                  <span class="import-result-percent">5%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 pr-0">
+            <a href="#modal-role-import-success" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Success</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">698</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 64%">
+                  <span class="sr-only">64% Success</span>
+                  <span class="import-result-percent">64%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 pr-0">
+            <a href="#modal-role-import-error" data-toggle="modal" class="import-result-container import-result-error">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Error</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">390</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-danger" style="width: 36%">
+                  <span class="sr-only">36% Error</span>
+                  <span class="import-result-percent">36%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div
+                class="d-flex import-result-heading p-0 col-sm">Supplemental Manager Import &nbsp;<small>(5 files)</small>
+              <div class="ml-auto">
+                <a href="#"><span class="icon-refresh"></span></a>
+                <a href="#"><span class="icon-download"></span></a>
+                <a href="#" id="schedule-manager-import" data-toggle="modal"><span
+                    class="icon-calendar-plus-o"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pr-sm-4">
+          <div class="col-sm-4 pr-0">
+            <a href="#modal-supplemental-mgr-report-success" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Success</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">698</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 64%">
+                  <span class="sr-only">64% Success</span>
+                  <span class="import-result-percent">64%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 pr-0">
+            <a href="#modal-supplemental-mgr-report-error" data-toggle="modal"
+               class="import-result-container import-result-error">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Error</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">390</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-danger" style="width: 36%">
+                  <span class="sr-only">36% Error</span>
+                  <span class="import-result-percent">36%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- <button class="btn btn-default" style="margin-top:15px;margin-bottom:15px;"><i class="fa fa-cog"></i> Manage Import Settings</button> -->
+      </div>
+      <div class="col-sm">
+        <div class="row">
+          <div class="col-sm">
+            <div
+                class="d-flex import-result-heading p-0 col-sm">Student Badge Import &nbsp;<small>(6 files)</small>
+              <div class="ml-auto">
+                <a href="#" class="refresh"><span class="icon-refresh"></span></a>
+                <a href="#" class="download"><span class="icon-download"></span></a>
+                <a href="#" id="schedule-badge-import" class="schedule" data-toggle="modal">
+                  <span class="icon-calendar-plus-o"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pr-sm-4">
+          <div class="col-sm pr-0">
+            <a href="#modal-report" data-toggle="modal" class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result">In&nbsp;Progress</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">10</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 5%;background-color:#F0C109">
+                  <span class="sr-only">5% In Progress</span>
+                  <span class="import-result-percent">5%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm pr-0">
+            <a href="#modal-report" data-toggle="modal" class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Success</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">698</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 64%">
+                  <span class="sr-only">64% Success</span>
+                  <span class="import-result-percent">64%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm pr-0">
+            <a href="#modal-report" data-toggle="modal" class="import-result-container import-result-error">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Error</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">390</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-danger" style="width: 36%">
+                  <span class="sr-only">36% Error</span>
+                  <span class="import-result-percent">36%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="d-flex import-result-heading p-0 col-sm">Student License Import &nbsp;<small>(4 files)</small>
+              <div class="ml-auto">
+                <a href="#" class="refresh"><span class="icon-refresh"></span></a>
+                <a href="#" class="download"><span class="icon-download"></span></a>
+                <a href="#" id="schedule-badge-import" class="schedule" data-toggle="modal">
+                  <span class="icon-calendar-plus-o pull-right"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="import-result-section">
+                                <a href="#modal-report" data-toggle="modal" class="import-result-container-single">
+                                    <div class="import-result-single import-result-success">
+                                        <div class="import-result"> Success</div>
+                                        <div class="import-result-value">8,454</div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-success" style="width: 59%">
+                                                <span class="sr-only">59% Success</span>
+                                            </div>
+                                        </div>
+                                        <div class="import-result-percent">59%</div>
+                                    </div>
+                                    <div class="import-result-single  import-result-error no-results">
+                                        <div class="import-result"> Error</div>
+                                        <div class="import-result-value">5,820</div>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-danger" style="width: 41%">
+                                                <span class="sr-only">41% Error</span>
+                                            </div>
+                                        </div>
+                                        <div class="import-result-percent">41%</div>
+                                    </div>
+                                </a>
+                            </div> -->
+        <div class="row pr-sm-4">
+          <div class="col-sm pr-0">
+            <a href="#modal-license-import-progress" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result">In&nbsp;Progress</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">10</div>
+                </div>
+              </div>
+              <div class="progress row">
+                <div class="progress-bar progress-bar-success" style="width: 5%;background-color:#F0C109">
+                  <span class="sr-only">5% In Progress</span>
+                  <span class="import-result-percent">5%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm pr-0">
+            <a href="#modal-license-import-success" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Success</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">698</div>
+                </div>
+              </div>
+              <div class="progress row">
+                <div class="progress-bar progress-bar-success" style="width: 64%">
+                  <span class="sr-only">64% Success</span>
+                  <span class="import-result-percent">64%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm pr-0">
+            <a href="#modal-license-import-error" data-toggle="modal"
+               class="import-result-container import-result-error">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Error</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">390</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-danger" style="width: 36%">
+                  <span class="sr-only">36% Error</span>
+                  <span class="import-result-percent">36%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="d-flex import-result-heading p-0 col-sm">Supervisor Import
+              &nbsp;<small>(1 import)</small>
+              <div class="ml-auto">
+                <a href="#" class="refresh"><span class="icon-refresh"></span></a>
+                <a href="#" class="download"><span class="icon-download"></span></a>
+                <a href="#" id="schedule-badge-import" class="schedule" data-toggle="modal">
+                  <span class="icon-calendar-plus-o"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pr-sm-4">
+          <div class="col-sm-4">
+            <a href="#modal-report" data-toggle="modal" class="import-result-container">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Success</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">8,454</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 64%">
+                  <span class="sr-only">59% Success</span>
+                  <span class="import-result-percent">59%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-sm-4 pr-0">
+            <div class="import-result-container import-result-error no-results">
+              <div class="row px-3">
+                <div class="col-sm px-0">
+                  <div class="import-result"> Error</div>
+                </div>
+                <div class="col-sm px-0">
+                  <div class="import-result-value">0</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-danger" style="width: 36%">
+                  <span class="sr-only">36% Error</span>
+                  <span class="import-result-percent">0%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!---->
+      </div>
+    </div>
+  </div>
+</form>
+<div id="schedule-student-import" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <form class="well form-horizontal" id="importSchedule">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+              class="icon-times-rectangle"></span></button>
+          <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+          <div class="text-center report-header">
+            <div class="h3">HLC Test Facility</div>
+            <div class="h2">Schedule Import Results Report</div>
+            <!--   <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+                <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>-->
+          </div>
+          <div class="wrapper">
+            <p class="text-center">Required fields are marked with a <span class="icon-asterisk text-warning"></span>
+            </p>
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label">Request Name <sup>
+                <span class="icon-asterisk text-warning"></span></sup></label>
+              <div class="col">
+                <input name="Name" placeholder="Request Name" class="form-control" type="text">
+              </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label">Email Address</label>
+              <div class="col">
+                <input name="Email" placeholder="Email" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label">Report Format <sup>
+                <span class="icon-asterisk text-warning"></span></sup></label>
+              <div class="col">
+                <select name="Format" class="form-control">
+                  <option>CSV</option>
+                  <option>Excel</option>
+                </select>
+              </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label">Choose frequency of scheduled task</label>
+              <div class="col text-left">
+                <div class="radio frequency">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="freqRadio" id="dailyFreq" value="option1"
+                           checked>
+                    <label class="form-check-label" for="dailyFreq">
+                      Daily
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="freqRadio" id="weeklyFreq" value="option2">
+                    <label class="form-check-label" for="weeklyFreq">
+                      Weekly
+                    </label>
+                  </div>
+                  <div class="form-inline ml-4 daysWeek">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Sun
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Mon
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Tue
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Wed
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Thu
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Fri
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Sat
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="radio monthly">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="freqRadio" id="monthlyFreq" value="option1"
+                           checked>
+                    <label class="form-check-label" for="monthlyFreq">
+                      Monthly
+                    </label>
+                  </div>
+                  <div class="radio form-group ml-3 monthSchedule">
+                    <div><input type="radio" name="whatDay"> 1st day of month</div>
+                    <div><input type="radio" name="whatDay"> Last day of month</div>
+                    <div><input type="radio" name="whatDay"> Specific day of month
+                      <input name="day_ofMonth" placeholder="day" class="mt-2 form-control" type="text"></div>
+                  </div>
+                </div>
+                <div class="radio quarterly">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="freqRadio" id="quarterFreq" value="option1"
+                           checked>
+                    <label class="form-check-label" for="quarterFreq">
+                      Quarterly
+                    </label>
+                  </div>
+                  <div class="radio form-group ml-3 quarterSchedule">
+                    <div><input type="radio" name="whatQDay"> 1st day of month</div>
+                    <div><input type="radio" name="whatQDay"> Last day of month</div>
+                    <div><input type="radio" name="whatQDay"> Specific day of month
+                      <input name="day_ofQuarter" placeholder="day" class="mt-2 form-control" type="text"></div>
+                  </div>
+                  <p>Note: quarters are defined as calendar quarters</p>
+                </div>
+              </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label startDate">Schedule Start Date</label>
+              <div class="col text-left">
+                <div class="form-inline">
+                  <div class="form-group">
+                    <label class="control-label-in"></label>
+                    <div class="input-group date">
+                      <input name="Start" type="text" class="form-control" data-provide="datepicker"
+                             data-start-date="0d"
+                             id="datepicker">
+                      <span class="input-group-append">
+                          <button class="btn btn-outline-secondary border-left-0" type="button"> <i
+                              class="icon-calendar"></i>
+                          </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label endDate">Schedule End Date</label>
+              <div class="col text-left">
+                <div class="form-inline">
+                  <div class="form-group">
+                    <label class="control-label-in"></label>
+                    <div class="input-group date">
+                      <input name="End" type="text" class="form-control" data-provide="datepicker"
+                             data-start-date="0d"
+                             id="datepicker">
+                      <span class="input-group-append">
+                          <button class="btn btn-outline-secondary border-left-0" type="button"> <i
+                              class="icon-calendar"></i>
+                          </button>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="text-center">Note: Scheduled tasks are processed nightly between Midnight and 8 AM ET</p>
+          </div>
+          <!-- Text input-->`
+          <div class="savedForm d-none mt-4">
+            <div id="message"></div>
+          </div>
+          <div class="modal-footer">
+            <div class="pull-left">
+              <button type="submit" class="btn btn-primary align-items-end">Save</button>
+              <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="modal-report" class="modal fade modal-admin-lg modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Student Badge Import In Progress Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+      </div>
+      <div class="modal-body">
+        <article>
+          <div id="divHasRecords">
+            <section class="report-tables">
+              <div class="table-wrapper">
+                <div id="divNoImportStatusSummaryRecords">
+                </div>
+                <table class="student-import-results">
+                  <thead>
+                  <tr class="title">
+                    <th colspan="4">
+                      <h2>Import Status Summary</h2>
+                    </th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="table-row stripe">
+                    <th>Update Day</th>
+                    <th>Institution</th>
+                    <th>Status</th>
+                    <th>Records</th>
+                  </tr>
+                  <tr class="table-row">
+                    <td>7/11/2018</td>
+                    <td>ARSVH - St. Vincent Health System - Little Rock</td>
+                    <td>Completed</td>
+                    <td>30</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td>7/11/2018</td>
+                    <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+                    <td>Completed</td>
+                    <td>14</td>
+                  </tr>
+                  <tr class="table-row stripe">
+                    <td>7/19/2018</td>
+                    <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+                    <td>Completed</td>
+                    <td>15</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td>7/19/2018</td>
+                    <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+                    <td>Failed</td>
+                    <td>2</td>
+                  </tr>
+                  </tbody>
+                </table>
+                Test
+              </div>
+            </section>
+            <!-- /REPORT GROUP TABLE AREA -->
+            <!-- REPORT GROUP TABLE AREA -->
+            <section class="report-tables">
+              <!-- REPORT GROUP TABLE FOR ITEM -->
+              <div class="table-wrapper">
+                <div id="divNoImportActionsRecords">
+                </div>
+                <table class="student-import-results">
+                  <tbody>
+                  <tr class="title">
+                    <th colspan="8">
+                      <h2>Import Action Summary</h2>
+                    </th>
+                  </tr>
+                  <tr class="table-row stripe">
+                    <th>Update Day</th>
+                    <th>Institution</th>
+                    <th>Students Added</th>
+                    <th>Students Updated</th>
+                    <th>Users Removed</th>
+                    <th>Departments Added</th>
+                    <th>Job Titles Added</th>
+                    <th>Custom Vals Added</th>
+                  </tr>
+                  <tr class="table-row">
+                    <td>7/11/2018</td>
+                    <td>ARSVH - St. Vincent Health System - Little Rock</td>
+                    <td>6</td>
+                    <td>24</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0/0/0/0</td>
+                  </tr>
+                  <tr class="table-row stripe">
+                    <td>7/11/2018</td>
+                    <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>0</td>
+                    <td>0/0/0/0</td>
+                  </tr>
+                  <tr class="table-row">
+                    <td>7/11/2018</td>
+                    <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+                    <td>6</td>
+                    <td>24</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0/0/0/0</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /REPORT GROUP TABLE FOR ITEM -->
+            </section>
+            <!-- /REPORT GROUP TABLE AREA -->
+            <!-- REPORT GROUP TABLE AREA -->
+            <section class="report-tables">
+              <!-- REPORT GROUP TABLE FOR ITEM -->
+              <div class="table-wrapper">
+                <div id="divImportErrorDetailRecords">
+                </div>
+                <table class="student-import-results error-detail with-counter">
+                  <tbody>
+                  <tr class="title">
+                    <th colspan="6">
+                      <h2>Import Error Detail</h2>
+                    </th>
+                  </tr>
+                  <tr class="table-row stripe">
+                    <th></th>
+                    <th>Date</th>
+                    <th>Institution</th>
+                    <th>Student</th>
+                    <th>Student ID</th>
+                    <th>Error Message</th>
+                  </tr>
+                  <tr class="table-row">
+                    <td></td>
+                    <td>7/11/2018</td>
+                    <td>N/A</td>
+                    <td>Berry, Karen L</td>
+                    <td>FCP5587</td>
+                    <td>Institution not found with code: 34357.</td>
+                  </tr>
+                  <tr class="table-row stripe">
+                    <td></td>
+                    <td>7/19/2018</td>
+                    <td>N/A</td>
+                    <td>Fialkowski, Lori J</td>
+                    <td>HEJ9003</td>
+                    <td>Institution not found with code: 33608.</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /REPORT GROUP TABLE FOR ITEM -->
+            </section>
+            <!-- /REPORT GROUP TABLE AREA -->
+          </div>
+        </article>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-student-import-progress" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Student Import In Progress Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable studentImportProgressSummary"
+                 id="studentImportProgressSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>In Progress</td>
+              <td>2</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>In Progress</td>
+              <td>2</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>In Progress</td>
+              <td>2</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-student-import-success" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Student Import Success Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="studentImportSuccessSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>Completed</td>
+              <td>30</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>Completed</td>
+              <td>14</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Completed</td>
+              <td>15</td>
+            </tr>
+            <!-- <tr class="table-row">
+                                     <td>7/19/2018</td>
+                                     <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+                                     <td>Failed</td>
+                                     <td>2</td>
+                                 </tr> -->
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Action Summary</div>
+          <table class="table  table-striped dataTable studentImportSuccess" id="studentImportSuccess">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th class="institution">Institution</th>
+              <th class="stud-added">Students<br> Added</th>
+              <th class="updated">Students<br> Updated</th>
+              <th class="removed">Users <br>Removed</th>
+              <th class="dept-added">Departments<br> Added</th>
+              <th class="job-added">Job Titles<br> Added</th>
+              <th class="custom-val-added">Custom Vals<br> Added</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-student-import-error" class="modal fade  modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          <span class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Student Import Error Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table table-striped dataTable" id="studentImportErrorSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Failed</td>
+              <td>2</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Error Detail</div>
+          <table class="table  table-striped dataTable studentImportErrorDetail" id="studentImportErrorDetail">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Date</th>
+              <th>Institution</th>
+              <th>Student</th>
+              <th>Student ID</th>
+              <th>Error Message</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <!--   <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+                              <tr>
+                                  <td>7/11/2018</td>
+                                  <td>N/A</td>
+                                  <td>Berry, Karen L</td>
+                                  <td>FCP5587</td>
+                                  <td>Institution not found with code: 34357.</td>
+                              </tr>
+
+                              <tr>
+                                  <td>7/19/2018</td>
+                                  <td>N/A</td>
+                                  <td>Fialkowski, Lori J</td>
+                                  <td>HEJ9003</td>
+                                  <td>Institution not found with code: 33608.</td>
+                              </tr>
+-->
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-job-function-progress" class="modal fade  modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Job Function Import In Progress Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Job Function Status Summary</div>
+          <table class="table  table-striped dataTable" id="jobFunctionProgressSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>In Progress</td>
+              <td>2</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>In Progress</td>
+              <td>2</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>In Progress</td>
+              <td>2</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">PDF</a></li>
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-job-function-success" class="modal fade  modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Student Job Function Success Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="jobFunctionSuccessSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>Completed</td>
+              <td>30</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>Completed</td>
+              <td>14</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Completed</td>
+              <td>15</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Action Summary</div>
+          <table class="table  table-striped dataTable jobFunctionSuccess" id="jobFunctionSuccess">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th class="institution">Institution</th>
+              <th class="added">Inserts</th>
+              <th class="updated">Updates</th>
+              <th class="removed">Deletes</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">PDF</a></li>
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-job-function-error" class="modal fade  modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Student Job Function Error Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="jobFunctionErrorSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Failed</td>
+              <td>2</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Error Detail</div>
+          <table class="table  table-striped dataTable jobFunctionErrorDetail" id="jobFunctionErrorDetail">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Date</th>
+              <th>Institution</th>
+              <th>User ID</th>
+              <th>Job Function</th>
+              <th>Error Message</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>jSmith</td>
+              <td>Registered Nurse</td>
+              <td>Effective Date is not valid.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>jane.doe</td>
+              <td>001 - Test</td>
+              <td>Job Function not found with name '001 - Test' at organization.</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">PDF</a></li>
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-role-import-progress" class="modal fade  modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">Trinity Health</div>
+          <div class="h2">Role Import In Progress Report</div>
+          <div class="h4"><strong>Date Range:</strong> July 01, 2018 - August 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Oct 23, 2018</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="roleImportProgressSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>LUMC - Loyola University Medical Center</td>
+              <td>Started</td>
+              <td>4</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/28/2018</td>
+              <td>LUMC - Loyola University Medical Center</td>
+              <td>Started</td>
+              <td>7</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-role-import-success" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Role Import Success Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="roleImportSuccessSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>Completed</td>
+              <td>30</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>Completed</td>
+              <td>14</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Completed</td>
+              <td>15</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Action Summary</div>
+          <table class="table  table-striped dataTable roleActionSummary" id="roleActionSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th class="institution">Institution</th>
+              <th class="added">Roles<br> Added</th>
+              <th class="updated">Roles <br>Updated</th>
+              <th class="removed">Roles<br> Deleted</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/19/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-role-import-error" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Role Import Error Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="roleImportErrorSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Failed</td>
+              <td>2</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Error Detail</div>
+          <table class="table  table-striped dataTable" id="roleImportErrorDetail">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Date</th>
+              <td>Institution</td>
+              <th>Student ID</th>
+              <th>Role</th>
+              <th>Error Message</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>7/19/2018</td>
+              <td>[CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>FLAP1001</td>
+              <td>Staff Supervisor</td>
+              <td>Cannot promote a department administrator to institution.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>FLAP1007</td>
+              <td>Student</td>
+              <td>At least one student role is required for a student user.</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-license-import-progress" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">Trinity Health</div>
+          <div class="h2">Student License Import In Progress Report</div>
+          <div class="h4"><strong>Date Range:</strong> July 01, 2018 - August 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Oct 23, 2018</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="licenseImportProgressSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>LUMC - Loyola University Medical Center</td>
+              <td>In Progress</td>
+              <td>4</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/28/2018</td>
+              <td>LUMC - Loyola University Medical Center</td>
+              <td>In Pogress</td>
+              <td>7</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-license-import-success" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Student License Import Success Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="licenseImportSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>Completed</td>
+              <td>30</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>Completed</td>
+              <td>14</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Completed</td>
+              <td>15</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Action Summary</div>
+          <table class="table  table-striped dataTable" id="licenseImportSuccessSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th class="institution">Institution</th>
+              <th class="added">Licenses <br>Added</th>
+              <th class="updated">Licenses<br> Updated</th>
+              <th class="removed">Licenses<br> Removed</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/19/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-license-import-error" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Student License Import Error Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="licenseImportErrorSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Failed</td>
+              <td>2</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Error Detail</div>
+          <table class="table  table-striped dataTable" id="licenseImportErrorDetail">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Date</th>
+              <th>Institution</th>
+              <th>Student</th>
+              <th>Student ID</th>
+              <th>Error Message</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Miller, Adrian</td>
+              <td>4055932</td>
+              <td>Effective Date is not valid.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Alaxanian, Sandra M</td>
+              <td>5009623</td>
+              <td>Discipline 'Radiologic Technologists and Technician' was not found.</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-supplemental-mgr-report-success" class="modal fade modal-report" tabindex="-1"
+     aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Supplemental Manager Import Success Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="suppMgrImportSuccessSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>Completed</td>
+              <td>30</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>Completed</td>
+              <td>14</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Completed</td>
+              <td>15</td>
+            </tr>
+            <!-- <tr class="table-row">
+                                     <td>7/19/2018</td>
+                                     <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+                                     <td>Failed</td>
+                                     <td>2</td>
+                                 </tr> -->
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Action Summary</div>
+          <table class="table  table-striped dataTable suppMgrImportSuccess" id="suppMgrImportSuccess">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th class="institution">Institution</th>
+              <th class="stud-added">Students Added</th>
+              <th class="updated">Students Updated</th>
+              <th class="removed">Users Removed</th>
+              <th class="dept-added">Departments Added</th>
+              <th class="job-added">Job Titles Added</th>
+              <th class="custom-val-added">Custom Vals Added</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+              <td>1</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0</td>
+              <td>0/0/0/0</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-supplemental-mgr-report-error" class="modal fade modal-report" tabindex="-1"
+     aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Supplemental Manager Import Error Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="suppMgrImportErrorSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Failed</td>
+              <td>2</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Error Detail</div>
+          <table class="table  table-striped dataTable suppMgrImportErrorDetail" id="suppMgrImportErrorDetail">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Date</th>
+              <th>Institution</th>
+              <th>Student</th>
+              <th>Student ID</th>
+              <th>Error Message</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            <tr>
+              <td>7/11/2018</td>
+              <td>N/A</td>
+              <td>Berry, Karen L</td>
+              <td>FCP5587</td>
+              <td>Institution not found with code: 34357.</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>N/A</td>
+              <td>Fialkowski, Lori J</td>
+              <td>HEJ9003</td>
+              <td>Institution not found with code: 33608.</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="modal-custom-range" class="modal fade" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+          <span class="icon-times-rectangle"></span></button>
+        <h4 class="modal-title">Custom Range </h4>
+      </div>
+      <div class="modal-body">
+        <section class="section">
+          <div>
+              <span
+                  class="help-block">Date selected must be within one year from today, and date range should not be more than 90 days.
+              </span>
+          </div>
+          <div class="has-error">
+            <span class="help-block">Basic error message location and styling if needed.</span>
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <label for="StartDate">Start:</label>
+                  <div class="input-group date" style="position: relative;">
+                    <input class="form-control" data-val="true" type="text" data-val-date="Must be a valid date"
+                           id="StartDate" name="StartDate" value="10/10/2018">
+                    <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button" id="btnDtStartDate"><i
+                                                    class="fa-calendar fa"></i></button>
+                                            </span>
+                  </div>
+                  <span class="help-block"><span class="field-validation-valid" data-valmsg-for="StartDate"
+                                                 data-valmsg-replace="true"></span></span>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group has-error">
+                  <label class="control-label" id="lblEndDateRange">End Date</label>
+                  <div class="input-group date has-error" id="divEndDate" style="position: relative;">
+                    <input 2type="text" id="txtEndDateRange" class="form-control"
+                           type="text">
+                    <span class="input-group-btn">
+                                                <button class="btn btn-danger" type="button" id="btnEndDateCalendar"><i
+                                                    class="fa fa-calendar"></i></button>
+                                            </span>
+                  </div>
+                  <span data-fv-result="NOT_VALIDATED" data-fv-for="txtEndDateRange" data-fv-validator="notEmpty"
+                        class="help-block" style="" id="errorEndDateRange">Invalid Date Range</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" data-dismiss="modal" id="rangeSelect">Apply</button>
+        <button class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</HTML>
