@@ -10,18 +10,6 @@
   <link href="dist/assets/css/app.min.css" type="text/css" rel="stylesheet">
   <!--<link href="dist/assets/fonts/css/icomoon.css" type="text/css" rel="stylesheet">-->
   <script src="dist/assets/js/app.min.js"></script>
-  <style>
-    .report {
-      background-size: cover;
-      background: url("assets/img/report.jpg") no-repeat fixed;
-    }
-
-    .report-hd {
-      height: 72px;
-      background-size: cover;
-      background: url("assets/img/report-head.jpg") no-repeat fixed;
-    }
-  </style>
 </head>
 <body id="hlcBody" onbeforeunload="">
 <form name="Form1" method="post" action="./ServicesMainMenu.aspx" id="Form1">
@@ -45,16 +33,18 @@
   <style>
   </style>
   <div class="container">
-    <div class="row text-center">
+    <div class="row">
       <div class="col h-100 justify-content-center">
-        <div class="my-3 align-content-center alert-info alert animated fade-in">
-          <p class="mb-0 pb-0"><strong>
-            Showing top 1000 of 10000 records. This is 10% of the actual report.
-            <br>Please export to Excel or CSV to view all data.
-          </strong>
-          </p>
+        <div class="position-relative">
+          <div class="alert-info alert w-100 fade-in">
+            <p class="mb-0 pb-0 fade-in text-center"><strong>
+              Showing top 1000 of 10000 records. This is 10% of the actual report.
+              <br>Please export to Excel or CSV to view all data.
+            </strong>
+            </p>
+          </div>
         </div>
-        <div class="h-100 text-center">
+        <div class="h-100">
           <div><img src="assets/img/report.jpg" width="100%" class="img-fluid my-3" alt=""></div>
         </div>
       </div>

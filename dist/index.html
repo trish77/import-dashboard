@@ -60,27 +60,31 @@
         <a href="#"
            class="d-none change-date-range">Change</a>
       </div>
-    </div>
-
+    </div><!--END HEADER-->
     <div class="row">
       <div class="col-lg-6 col-md-12">
-        <div class="d-flex import-result-heading p-0 col-sm">Student Import &nbsp;<small> (7 files)</small>
-          <div class="ml-auto">
-            <a href="#"><span class="icon-refresh"></span></a>
-            <a href="#"><span class="icon-download"></span></a>
-            <a href="#" data-toggle='popover' title="Schedule Report" class="icon-calendar-plus-o text-secondary"></a>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Student Import &nbsp;<small> (7 files)</small>
+            </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-student-import-progress" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-lg-12 col-xl-6 px-0 pb-lg-1">
                   <div class="import-result">In&nbsp;Progress</div>
                 </div>
-                <div class="col-sm px-0">
-                  <div class="import-result-value">100000</div>
+                <div class="col-lg-12 col-xl-6 px-0 pb-lg-1">
+                  <div class="import-result-value">100,000</div>
                 </div>
               </div>
               <div class="progress px-0 row">
@@ -91,14 +95,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-student-import-success" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">698</div>
                 </div>
               </div>
@@ -110,14 +114,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-student-import-error" data-toggle="modal"
                class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -130,27 +134,27 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="d-flex import-result-heading p-0 col-sm">Student Job Function &nbsp;<small> (3 files)</small>
-              <div class="ml-auto">
-                <a href="#"><span class="icon-refresh"></span></a>
-                <a href="#"><span class="icon-download"></span></a>
-                <a href="schedule-student-import" data-toggle="modal"><span
-                    class="icon-calendar-plus-o"></span></a>
-              </div>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Student Job Function &nbsp;<small> (3 files)</small>
             </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-job-function-progress" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result">In&nbsp;Progress</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">10</div>
                 </div>
               </div>
@@ -162,16 +166,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-job-function-success" data-toggle="modal"
                class="import-result-container import-result-success">
-              <div class="row px-3">
-                <div class="col-sm px-0">
-                  <div class="import-result"> Success</div>
-                </div>
-                <div class="col-sm px-0">
-                  <div class="import-result-value">698</div>
-                </div>
+              <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
+                <div class="import-result"> Success</div>
+              </div>
+              <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
+                <div class="import-result-value">698</div>
               </div>
               <div class="progress px-0 row">
                 <div class="progress-bar progress-bar-success" style="width: 64%">
@@ -181,13 +183,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm pr-0">
-            <a href="#modal-job-function-error" data-toggle="modal" class="import-result-container import-result-error">
+          <div class="col-lg-4 col-md-12 pr-0">
+            <a href="#modal-job-function-error" data-toggle="modal"
+               class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -200,27 +203,27 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="d-flex import-result-heading p-0 col-sm">Role Import <small>&nbsp; (7 files)</small>
-              <div class="ml-auto">
-                <a href="#"><span class="icon-refresh"></span></a>
-                <a href="#"><span class="icon-download"></span></a>
-                <a href="#" id="schedule-role-import" data-toggle="modal"><span
-                    class="icon-calendar-plus-o"></span></a>
-              </div>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Role Import <small>&nbsp; (7 files)</small>
             </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-role-import-progress" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result">In&nbsp;Progress</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">10</div>
                 </div>
               </div>
@@ -232,14 +235,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm-4 pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-role-import-success" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">698</div>
                 </div>
               </div>
@@ -251,13 +254,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm-4 pr-0">
-            <a href="#modal-role-import-error" data-toggle="modal" class="import-result-container import-result-error">
+          <div class="col-lg-4 col-md-12 pr-0">
+            <a href="#modal-role-import-error" data-toggle="modal"
+               class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -270,17 +274,16 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div
-                class="d-flex import-result-heading p-0 col-sm">Supplemental Manager Import &nbsp;<small>(5 files)</small>
-              <div class="ml-auto">
-                <a href="#"><span class="icon-refresh"></span></a>
-                <a href="#"><span class="icon-download"></span></a>
-                <a href="#" id="schedule-manager-import" data-toggle="modal"><span
-                    class="icon-calendar-plus-o"></span></a>
-              </div>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Supplemental Manager Import &nbsp;<small>(5 files)</small>
             </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
@@ -288,10 +291,10 @@
             <a href="#modal-supplemental-mgr-report-success" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">698</div>
                 </div>
               </div>
@@ -307,10 +310,10 @@
             <a href="#modal-supplemental-mgr-report-error" data-toggle="modal"
                class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -323,30 +326,31 @@
             </a>
           </div>
         </div>
-        <!-- <button class="btn btn-default" style="margin-top:15px;margin-bottom:15px;"><i class="fa fa-cog"></i> Manage Import Settings</button> -->
       </div>
-      <div class="col">
-        <div class="row">
-          <div class="col-sm">
-            <div
-                class="d-flex import-result-heading p-0 col-sm">Student Badge Import &nbsp;<small>(6 files)</small>
-              <div class="ml-auto">
-                <a href="#" class="text-secondary"><span class="icon-refresh"></span></a>
-                <a href="#" class="text-secondary"><span class="icon-download"></span></a>
-                <a href="#" data-toggle='popover' title="Schedule Report" class="icon-calendar-plus-o text-secondary"></a>
-
+      <!-- <button class="btn btn-default" style="margin-top:15px;margin-bottom:15px;"><i class="fa fa-cog"></i> Manage Import Settings</button> -->
+      <div class="col-lg-6 col-md-12">
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">
+              <div class="d-flex import-result-heading p-0 col-sm">Student Badge Import &nbsp;<small>(6 files)</small>
               </div>
             </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
           <div class="col-sm pr-0">
             <a href="#modal-report" data-toggle="modal" class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result">In&nbsp;Progress</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">10</div>
                 </div>
               </div>
@@ -361,10 +365,10 @@
           <div class="col-sm pr-0">
             <a href="#modal-report" data-toggle="modal" class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">698</div>
                 </div>
               </div>
@@ -379,10 +383,10 @@
           <div class="col-sm pr-0">
             <a href="#modal-report" data-toggle="modal" class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -395,51 +399,27 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="d-flex import-result-heading p-0 col-sm">Student License Import &nbsp;<small>(4 files)</small>
-              <div class="ml-auto">
-                <a href="#" class="refresh"><span class="icon-refresh"></span></a>
-                <a href="#" class="download"><span class="icon-download"></span></a>
-                <a href="#" id="schedule-badge-import" class="schedule" data-toggle="modal">
-                  <span class="icon-calendar-plus-o pull-right"></span></a>
-              </div>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Student License Import &nbsp;<small>(4 files)</small>
             </div>
           </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
+          </div>
         </div>
-        <!-- <div class="import-result-section">
-                                <a href="#modal-report" data-toggle="modal" class="import-result-container-single">
-                                    <div class="import-result-single import-result-success">
-                                        <div class="import-result"> Success</div>
-                                        <div class="import-result-value">8,454</div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 59%">
-                                                <span class="sr-only">59% Success</span>
-                                            </div>
-                                        </div>
-                                        <div class="import-result-percent">59%</div>
-                                    </div>
-                                    <div class="import-result-single  import-result-error no-results">
-                                        <div class="import-result"> Error</div>
-                                        <div class="import-result-value">5,820</div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" style="width: 41%">
-                                                <span class="sr-only">41% Error</span>
-                                            </div>
-                                        </div>
-                                        <div class="import-result-percent">41%</div>
-                                    </div>
-                                </a>
-                            </div> -->
         <div class="row pr-sm-4">
           <div class="col-sm pr-0">
             <a href="#modal-license-import-progress" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result">In&nbsp;Progress</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">10</div>
                 </div>
               </div>
@@ -455,10 +435,10 @@
             <a href="#modal-license-import-success" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">698</div>
                 </div>
               </div>
@@ -474,10 +454,10 @@
             <a href="#modal-license-import-error" data-toggle="modal"
                class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -490,27 +470,27 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="d-flex import-result-heading p-0 col-sm">Supervisor Import
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Supervisor Import
               &nbsp;<small>(1 import)</small>
-              <div class="ml-auto">
-                <a href="#" class="refresh"><span class="icon-refresh"></span></a>
-                <a href="#" class="download"><span class="icon-download"></span></a>
-                <a href="#" id="schedule-badge-import" class="schedule" data-toggle="modal">
-                  <span class="icon-calendar-plus-o"></span></a>
-              </div>
             </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
           <div class="col-sm-4">
             <a href="#modal-report" data-toggle="modal" class="import-result-container">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">8,454</div>
                 </div>
               </div>
@@ -525,10 +505,10 @@
           <div class="col-sm-4 pr-0">
             <div class="import-result-container import-result-error no-results">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">0</div>
                 </div>
               </div>
@@ -544,15 +524,13 @@
         <!---->
       </div>
     </div>
-  </div>
 </form>
 <div id="schedule-import" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
   <form class="well form-horizontal" id="importSchedule">
-  <div class="modal-dialog modal-dialog-scrollable modal-xl">
+    <div class="modal-dialog modal-dialog-scrollable modal-xl">
       <div class="modal-content">
         <div class="modal-body">
-
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+          <button type="button" class="close closeForm" data-dismiss="modal" aria-hidden="true"><span
               class="icon-times-rectangle"></span></button>
           <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
           <div class="text-center report-header">
@@ -562,205 +540,246 @@
                 <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>-->
           </div>
           <div class="wrapper">
-          <p class="text-center">Required fields are marked with a <span class="icon-asterisk text-warning"></span></p>
-          <!-- Text input-->
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label class="col-3 control-label">Request Name <sup>
-              <span class="icon-asterisk text-warning"></span></sup></label>
-            <div class="col">
-              <input name="Name" placeholder="Request Name" class="form-control" type="text">
-            </div>
-          </div>
-          <!-- Text input-->
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label class="col-3 control-label">Email Address</label>
-            <div class="col">
-              <input name="Email" placeholder="Email" class="form-control" type="text">
-            </div>
-          </div>
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label class="col-3 control-label">Report Format <sup>
-              <span class="icon-asterisk text-warning"></span></sup></label>
-            <div class="col">
-              <select name="Format" class="form-control">
-                <option>CSV</option>
-                <option>Excel</option>
-              </select>
-            </div>
-          </div>
-          <!-- Text input-->
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label class="col-3 control-label">Choose frequency of scheduled task</label>
-            <div class="col text-left">
-              <div class="radio frequency">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="freqRadio" id="dailyFreq" value="option1" checked>
-                  <label class="form-check-label" for="dailyFreq">
-                    Daily
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="freqRadio" id="weeklyFreq" value="option2">
-                  <label class="form-check-label" for="weeklyFreq">
-                    Weekly
-                  </label>
-                </div>
-                <div class="form-inline ml-4 daysWeek">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Sun
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Mon
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Tue
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Wed
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Thu
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Fri
-                    </label>
-                  </div>
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"> Sat
-                    </label>
-                  </div>
-                </div>
+            <p class="text-center">Required fields are marked with a <span class="icon-asterisk text-warning"></span>
+            </p>
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label">Request Name <sup>
+                <span class="icon-asterisk text-warning"></span></sup></label>
+              <div class="col">
+                <input name="Name" placeholder="Request Name" class="form-control" type="text">
               </div>
-              <div class="radio monthly">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="freqRadio" id="monthlyFreq" value="option1" checked>
-                  <label class="form-check-label" for="monthlyFreq">
-                    Monthly
-                  </label>
+            </div>
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label">Email Address</label>
+              <div class="col">
+                <input name="Email" placeholder="Email" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label">Report Format <sup>
+                <span class="icon-asterisk text-warning"></span></sup></label>
+              <div class="col">
+                <select name="Format" class="form-control">
+                  <option>CSV</option>
+                  <option>Excel</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label">Report Date Range <sup>
+                <span class="icon-asterisk text-warning"></span></sup></label>
+              <div class="col">
+                <select class="form-control date-range__control">
+                  <!-- <optgroup label="Presets"> -->
+                  <option selected="">Last 24 hours</option>
+                  <option>Last 72 hours</option>
+                  <option>Last 7 days</option>
+                  <option>Last 14 days</option>
+                  <option>Last 30 days</option>
+                </select>
+              </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label">Choose frequency of scheduled task</label>
+              <div class="col text-left">
+                <div class="radio frequency">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="freqRadio" id="dailyFreq" value="option1"
+                           checked>
+                    <label class="form-check-label" for="dailyFreq">
+                      Daily
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="freqRadio" id="weeklyFreq" value="option2">
+                    <label class="form-check-label" for="weeklyFreq">
+                      Weekly
+                    </label>
+                  </div>
+                  <div class="form-inline ml-4 daysWeek">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Sun
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Mon
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Tue
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Wed
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Thu
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Fri
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Sat
+                      </label>
+                    </div>
+                  </div>
                 </div>
-
+                <div class="radio monthly">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="freqRadio" id="monthlyFreq" value="option1"
+                           checked>
+                    <label class="form-check-label" for="monthlyFreq">
+                      Monthly
+                    </label>
+                  </div>
                   <div class="radio form-group ml-3 monthSchedule">
                     <div><input type="radio" name="whatDay"> 1st day of month</div>
                     <div><input type="radio" name="whatDay"> Last day of month</div>
                     <div><input type="radio" name="whatDay"> Specific day of month
                       <input name="day_ofMonth" placeholder="day" class="mt-2 form-control" type="text"></div>
                   </div>
-              </div>
-              <div class="radio quarterly">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="freqRadio" id="quarterFreq" value="option1" checked>
-                  <label class="form-check-label" for="quarterFreq">
-                    Quarterly
-                  </label>
                 </div>
-
+                <div class="radio quarterly">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="freqRadio" id="quarterFreq" value="option1"
+                           checked>
+                    <label class="form-check-label" for="quarterFreq">
+                      Quarterly
+                    </label>
+                  </div>
                   <div class="radio form-group ml-3 quarterSchedule">
                     <div><input type="radio" name="whatQDay"> 1st day of month</div>
                     <div><input type="radio" name="whatQDay"> Last day of month</div>
                     <div><input type="radio" name="whatQDay"> Specific day of month
                       <input name="day_ofQuarter" placeholder="day" class="mt-2 form-control" type="text"></div>
                   </div>
-
-                <p>Note: quarters are defined as calendar quarters</p>
+                  <p>Note: quarters are defined as calendar quarters</p>
+                </div>
               </div>
             </div>
-          </div>
-          <!-- Text input-->
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label class="col-3 control-label startDate">Schedule Start Date</label>
-            <div class="col text-left">
-              <div class="form-inline">
-                <div class="form-group">
-                  <label class="control-label-in"></label>
-                  <div class="input-group date">
-                    <input name="Start" type="text" class="form-control" data-provide="datepicker"
-                           data-start-date="0d"
-                           id="datepicker">
-                    <span class="input-group-append">
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label startDate">Schedule Start Date</label>
+              <div class="col text-left">
+                <div class="form-inline">
+                  <div class="form-group">
+                    <label class="control-label-in"></label>
+                    <div class="input-group date">
+                      <input name="Start" type="text" class="form-control" data-provide="datepicker"
+                             data-start-date="0d"
+                             id="datepicker">
+                      <span class="input-group-append">
                           <button class="btn btn-outline-secondary border-left-0" type="button"> <i
                               class="icon-calendar"></i>
                           </button>
                       </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Text input-->
-          <div class="form-group row">
-            <div class="col-1"></div>
-            <label class="col-3 control-label endDate">Schedule End Date</label>
-            <div class="col text-left">
-              <div class="form-inline">
-                <div class="form-group">
-                  <label class="control-label-in"></label>
-                  <div class="input-group date">
-                    <input name="End" type="text" class="form-control" data-provide="datepicker"
-                           data-start-date="0d"
-                           id="datepicker">
-                    <span class="input-group-append">
+            <!-- Text input-->
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label endDate">Schedule End Date</label>
+              <div class="col text-left">
+                <div class="form-inline">
+                  <div class="form-group">
+                    <label class="control-label-in"></label>
+                    <div class="input-group date">
+                      <input name="End" type="text" class="form-control" data-provide="datepicker"
+                             data-start-date="0d"
+                             id="datepicker">
+                      <span class="input-group-append">
                           <button class="btn btn-outline-secondary border-left-0" type="button"> <i
                               class="icon-calendar"></i>
                           </button>
                       </span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <p class="text-center">Note: Scheduled tasks are processed nightly between Midnight and 8 AM ET</p>
+            <div class="modal-footer">
+              <div class="pull-left">
+                <button type="submit" id="saveBtn2" class="btn btn-primary align-items-end">Save</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
           </div>
-          <p class="text-center">Note: Scheduled tasks are processed nightly between Midnight and 8 AM ET</p>
+          <div class="savedForm  mt-4">
+            <div class="alert alert-primary" id="alertMessage" role="alert">
+              <div id="message"></div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="text-right my-3">
+                  <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none btn btn-success"
+                     data-toggle='modal'
+                     title="Schedule Report">Add New Schedule</a>
+                </div>
+              </div>
+            </div>
+            <table class="table table-bordered">
+              <tr>
+                <th>Report Name</th>
+                <th>Date Created</th>
+                <th>Frequency</th>
+                <th>Manage</th>
+              </tr>
+              <tr>
+                <td>Student Monthly Report</td>
+                <td>1/1/2020</td>
+                <td>Daily</td>
+                <td>
+                  <div class="d-flex">
+                    <a href="#" class="text-decoration-none mr-3"><span class="icon-pencil"></span> </a>
+                    <a href="#" class="text-decoration-none"><span class="icon-trash-o"></span></a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Student Daily Report</td>
+                <td>1/1/2020</td>
+                <td>Weekly</td>
+                <td>
+                  <div class="d-flex">
+                    <a href="#" id="editForm" class="text-decoration-none mr-3"><span class="icon-pencil"></span> </a>
+                    <a href="#" id="deleteForm" class="text-decoration-none"><span class="icon-trash-o"></span></a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="modal-footer">
+              <div class="pull-left">
+                <button class="btn btn-secondary" id="savedFormCancel" data-dismiss="modal">Close</button>
+              </div>
+            </div>
           </div>
-          <!-- Text input-->`
-          <div class="savedForm d-none mt-4">
-            <div id="message"></div>
-          </div>
-
-        <div class="modal-footer">
-          <div class="pull-left">
-            <button type="submit" id="saveBtn" class="btn btn-primary align-items-end">Save</button>
-            <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-          </div>
-        </div>
         </div>
       </div>
-  </div>
+    </div>
   </form>
-  <div id="manage-form" class="d-none">
-    <table>
-      <tr>
-        <th>Report Name</th>
-        <th>Date Created</th>
-        <th>Manage</th>
-      </tr>
-      <tr>
-        <td>Student Monthly Report</td>
-        <td>1/1/2020</td>
-        <td><a href="#" id="editReport">Edit Report</a></td>
-      </tr>
-      <tr>
-        <td>Student Daily Report</td>
-        <td>1/1/2020</td>
-        <td><a href="#">Edit Report</a></td>
-      </tr>
-    </table>
-  </div>
 </div>
 <div id="modal-report" class="modal fade modal-admin-lg modal-report" tabindex="-1" aria-hidden="false">
   <div class="modal-dialog modal-xl">
@@ -4785,7 +4804,6 @@
 </div>
 <div role="alert" aria-live="assertive" aria-atomic="true" id="alertGrowl" class="toast" data-autohide="false">
   <div class="toast-header">
-
     <strong class="mr-auto">Report Scheduled</strong>
     <!--<small>11 mins ago</small>-->
     <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
@@ -4796,7 +4814,5 @@
     Your report was successfully scheduled
   </div>
 </div>
-
-
 </body>
 </HTML>
