@@ -1,0 +1,47 @@
+{
+  "name": "course search",
+  "version": "1.1.0",
+  "description": "HLC Import Dashboard",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "bootstrap",
+    "4",
+    "sass",
+    "scss",
+    "gulp",
+    "4",
+    "boilerplate",
+    "stater"
+  ],
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "gijgo": "^1.9.13",
+    "jquery": ">=3.4.0",
+    "popper.js": "1.16.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^3.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-clean-css": "3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "merge-stream": "^1.0.1",
+    "react-widgets": "^4.4.11",
+    "readable-stream": "^3.4.0"
+  }
+}

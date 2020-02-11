@@ -1,0 +1,101 @@
+{
+  "C#": {
+    "beautifiers": [
+      "Pretty Diff"
+    ],
+    "indent_size": 2
+  },
+
+  "CSS": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff",
+      "JS-Beautify"
+    ],
+    "indent_size": 2
+  },
+  "HTML": {
+    "beautifiers": [
+      "Pretty Diff",
+      "JS-Beautify"
+    ],
+    "indent_size": 2,
+    "indent_inner_html": true
+  },
+  "Handlebars": {
+    "beautifiers": [
+      "Pretty Diff",
+      "JS-Beautify"
+    ]
+  },
+  "JSON": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff",
+      "JS-Beautify"
+    ]
+  },
+  "JSX": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff",
+      "JS-Beautify"
+    ],
+    "max_preserve_newlines": 1
+  },
+  "JavaScript": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff",
+      "JS-Beautify",
+      "ESLint"
+    ],
+    "indent_size": 2,
+    "max_preserve_newlines": 1
+  },
+  "Less": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff"
+    ]
+  },
+  "Markdown": {
+    "beautifiers": [
+      "Prettier"
+    ]
+  },
+  "PHP": {
+    "beautifiers": [
+      "PHP-CS-Fixer"
+    ]
+  },
+  "SCSS": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff"
+    ],
+    "indent_size": 2,
+    "no_leading_zero": true
+  },
+  "Sass": {
+    "beautifiers": [
+      "Pretty Diff"
+    ],
+    "indent_size": 2,
+    "max_preserve_newlines": 1
+  },
+  "TypeScript": {
+    "beautifiers": [
+      "Prettier",
+      "Pretty Diff"
+    ],
+    "indent_size": 2,
+    "max_preserve_newlines": 1
+  },
+  "Vue": {
+    "beautifiers": [
+      "Prettier"
+    ],
+    "indent_size": 2
+  }
+}
