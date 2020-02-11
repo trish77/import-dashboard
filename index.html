@@ -33,58 +33,58 @@
   <style>
   </style>
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm">
-        <div class="row">
-          <div class="col">
-            <h2>Import Results <small class="import-results-date-range-label"> - Last 24 Hours</small></h2>
-          </div>
-          <div class="col-1 date-range">
-            <label class="col-form-label">Date Range:</label>
-          </div>
-          <div class="col-2">
-            <select class="form-control date-range__control">
-              <!-- <optgroup label="Presets"> -->
-              <option selected="">Last 24 hours</option>
-              <option>Last 72 hours</option>
-              <option>Last 7 days</option>
-              <option>Last 14 days</option>
-              <option>Last 30 days</option>
-              <!-- </optgroup> -->
-              <!-- <optgroup label="Custom"> -->
-              <option value="custom" class="custom-date-range-option">Custom Range</option>
-              <!-- </optgroup> -->
-            </select>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 text-right">
-            <a href="#"
-               class="d-none change-date-range">Change</a>
-          </div>
-        </div>
+    <div class="row mt-4">
+      <div class="col">
+        <h2>Import Results <small class="import-results-date-range-label"> - Last 24 Hours</small></h2>
+      </div>
+      <div class="col-1 col-sm-2  text-right date-range">
+        <label class="col-form-label">Date Range:</label>
+      </div>
+      <div class="col-3">
+        <select class="form-control date-range__control">
+          <!-- <optgroup label="Presets"> -->
+          <option selected="">Last 24 hours</option>
+          <option>Last 72 hours</option>
+          <option>Last 7 days</option>
+          <option>Last 14 days</option>
+          <option>Last 30 days</option>
+          <!-- </optgroup> -->
+          <!-- <optgroup label="Custom"> -->
+          <option value="custom" class="custom-date-range-option">Custom Range</option>
+          <!-- </optgroup> -->
+        </select>
       </div>
     </div>
     <div class="row">
-      <div class="col-sm">
-        <div class="d-flex import-result-heading p-0 col-sm">Student Import &nbsp;<small> (7 files)</small>
-          <div class="ml-auto">
-            <a href="#"><span class="icon-refresh"></span></a>
-            <a href="#"><span class="icon-download"></span></a>
-            <a href="#schedule-student-import" data-toggle="modal"><span
-                class="icon-calendar-plus-o"></span></a>
+      <div class="col-12 text-right">
+        <a href="#"
+           class="d-none change-date-range">Change</a>
+      </div>
+    </div><!--END HEADER-->
+    <div class="row">
+      <div class="col-lg-6 col-md-12">
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Student Import &nbsp;<small> (7 files)</small>
+            </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-student-import-progress" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-lg-12 col-xl-6 px-0 pb-lg-1">
                   <div class="import-result">In&nbsp;Progress</div>
                 </div>
-                <div class="col-sm px-0">
-                  <div class="import-result-value">100000</div>
+                <div class="col-lg-12 col-xl-6 px-0 pb-lg-1">
+                  <div class="import-result-value">100,000</div>
                 </div>
               </div>
               <div class="progress px-0 row">
@@ -95,14 +95,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-student-import-success" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">698</div>
                 </div>
               </div>
@@ -114,14 +114,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-student-import-error" data-toggle="modal"
                class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -134,27 +134,27 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="d-flex import-result-heading p-0 col-sm">Student Job Function &nbsp;<small> (3 files)</small>
-              <div class="ml-auto">
-                <a href="#"><span class="icon-refresh"></span></a>
-                <a href="#"><span class="icon-download"></span></a>
-                <a href="schedule-student-import" data-toggle="modal"><span
-                    class="icon-calendar-plus-o"></span></a>
-              </div>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Student Job Function &nbsp;<small> (3 files)</small>
             </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-job-function-progress" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result">In&nbsp;Progress</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">10</div>
                 </div>
               </div>
@@ -166,16 +166,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-job-function-success" data-toggle="modal"
                class="import-result-container import-result-success">
-              <div class="row px-3">
-                <div class="col-sm px-0">
-                  <div class="import-result"> Success</div>
-                </div>
-                <div class="col-sm px-0">
-                  <div class="import-result-value">698</div>
-                </div>
+              <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
+                <div class="import-result"> Success</div>
+              </div>
+              <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
+                <div class="import-result-value">698</div>
               </div>
               <div class="progress px-0 row">
                 <div class="progress-bar progress-bar-success" style="width: 64%">
@@ -185,13 +183,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm pr-0">
-            <a href="#modal-job-function-error" data-toggle="modal" class="import-result-container import-result-error">
+          <div class="col-lg-4 col-md-12 pr-0">
+            <a href="#modal-job-function-error" data-toggle="modal"
+               class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -204,27 +203,27 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="d-flex import-result-heading p-0 col-sm">Role Import <small>&nbsp; (7 files)</small>
-              <div class="ml-auto">
-                <a href="#"><span class="icon-refresh"></span></a>
-                <a href="#"><span class="icon-download"></span></a>
-                <a href="#" id="schedule-role-import" data-toggle="modal"><span
-                    class="icon-calendar-plus-o"></span></a>
-              </div>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Role Import <small>&nbsp; (7 files)</small>
             </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
-          <div class="col-sm pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-role-import-progress" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result">In&nbsp;Progress</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">10</div>
                 </div>
               </div>
@@ -236,14 +235,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm-4 pr-0">
+          <div class="col-lg-4 col-md-12 pr-0">
             <a href="#modal-role-import-success" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">698</div>
                 </div>
               </div>
@@ -255,13 +254,14 @@
               </div>
             </a>
           </div>
-          <div class="col-sm-4 pr-0">
-            <a href="#modal-role-import-error" data-toggle="modal" class="import-result-container import-result-error">
+          <div class="col-lg-4 col-md-12 pr-0">
+            <a href="#modal-role-import-error" data-toggle="modal"
+               class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -274,17 +274,16 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div
-                class="d-flex import-result-heading p-0 col-sm">Supplemental Manager Import &nbsp;<small>(5 files)</small>
-              <div class="ml-auto">
-                <a href="#"><span class="icon-refresh"></span></a>
-                <a href="#"><span class="icon-download"></span></a>
-                <a href="#" id="schedule-manager-import" data-toggle="modal"><span
-                    class="icon-calendar-plus-o"></span></a>
-              </div>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Supplemental Manager Import &nbsp;<small>(5 files)</small>
             </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
@@ -292,10 +291,10 @@
             <a href="#modal-supplemental-mgr-report-success" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">698</div>
                 </div>
               </div>
@@ -311,10 +310,10 @@
             <a href="#modal-supplemental-mgr-report-error" data-toggle="modal"
                class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -327,30 +326,31 @@
             </a>
           </div>
         </div>
-        <!-- <button class="btn btn-default" style="margin-top:15px;margin-bottom:15px;"><i class="fa fa-cog"></i> Manage Import Settings</button> -->
       </div>
-      <div class="col-sm">
-        <div class="row">
-          <div class="col-sm">
-            <div
-                class="d-flex import-result-heading p-0 col-sm">Student Badge Import &nbsp;<small>(6 files)</small>
-              <div class="ml-auto">
-                <a href="#" class="refresh"><span class="icon-refresh"></span></a>
-                <a href="#" class="download"><span class="icon-download"></span></a>
-                <a href="#" id="schedule-badge-import" class="schedule" data-toggle="modal">
-                  <span class="icon-calendar-plus-o"></span></a>
+      <!-- <button class="btn btn-default" style="margin-top:15px;margin-bottom:15px;"><i class="fa fa-cog"></i> Manage Import Settings</button> -->
+      <div class="col-lg-6 col-md-12">
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">
+              <div class="d-flex import-result-heading p-0 col-sm">Student Badge Import &nbsp;<small>(6 files)</small>
               </div>
             </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
           <div class="col-sm pr-0">
             <a href="#modal-report" data-toggle="modal" class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result">In&nbsp;Progress</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">10</div>
                 </div>
               </div>
@@ -365,10 +365,10 @@
           <div class="col-sm pr-0">
             <a href="#modal-report" data-toggle="modal" class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">698</div>
                 </div>
               </div>
@@ -383,10 +383,10 @@
           <div class="col-sm pr-0">
             <a href="#modal-report" data-toggle="modal" class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -399,51 +399,27 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="d-flex import-result-heading p-0 col-sm">Student License Import &nbsp;<small>(4 files)</small>
-              <div class="ml-auto">
-                <a href="#" class="refresh"><span class="icon-refresh"></span></a>
-                <a href="#" class="download"><span class="icon-download"></span></a>
-                <a href="#" id="schedule-badge-import" class="schedule" data-toggle="modal">
-                  <span class="icon-calendar-plus-o pull-right"></span></a>
-              </div>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Student License Import &nbsp;<small>(4 files)</small>
             </div>
           </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
+          </div>
         </div>
-        <!-- <div class="import-result-section">
-                                <a href="#modal-report" data-toggle="modal" class="import-result-container-single">
-                                    <div class="import-result-single import-result-success">
-                                        <div class="import-result"> Success</div>
-                                        <div class="import-result-value">8,454</div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-success" style="width: 59%">
-                                                <span class="sr-only">59% Success</span>
-                                            </div>
-                                        </div>
-                                        <div class="import-result-percent">59%</div>
-                                    </div>
-                                    <div class="import-result-single  import-result-error no-results">
-                                        <div class="import-result"> Error</div>
-                                        <div class="import-result-value">5,820</div>
-                                        <div class="progress">
-                                            <div class="progress-bar progress-bar-danger" style="width: 41%">
-                                                <span class="sr-only">41% Error</span>
-                                            </div>
-                                        </div>
-                                        <div class="import-result-percent">41%</div>
-                                    </div>
-                                </a>
-                            </div> -->
         <div class="row pr-sm-4">
           <div class="col-sm pr-0">
             <a href="#modal-license-import-progress" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result">In&nbsp;Progress</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">10</div>
                 </div>
               </div>
@@ -459,10 +435,10 @@
             <a href="#modal-license-import-success" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">698</div>
                 </div>
               </div>
@@ -478,10 +454,10 @@
             <a href="#modal-license-import-error" data-toggle="modal"
                class="import-result-container import-result-error">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">390</div>
                 </div>
               </div>
@@ -494,27 +470,27 @@
             </a>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm">
-            <div class="d-flex import-result-heading p-0 col-sm">Supervisor Import
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Supervisor Import
               &nbsp;<small>(1 import)</small>
-              <div class="ml-auto">
-                <a href="#" class="refresh"><span class="icon-refresh"></span></a>
-                <a href="#" class="download"><span class="icon-download"></span></a>
-                <a href="#" id="schedule-badge-import" class="schedule" data-toggle="modal">
-                  <span class="icon-calendar-plus-o"></span></a>
-              </div>
             </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
         <div class="row pr-sm-4">
           <div class="col-sm-4">
             <a href="#modal-report" data-toggle="modal" class="import-result-container">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">8,454</div>
                 </div>
               </div>
@@ -529,10 +505,10 @@
           <div class="col-sm-4 pr-0">
             <div class="import-result-container import-result-error no-results">
               <div class="row px-3">
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result"> Error</div>
                 </div>
-                <div class="col-sm px-0">
+                <div class="col-md-12 col-lg-6 px-0 pb-lg-1">
                   <div class="import-result-value">0</div>
                 </div>
               </div>
@@ -548,14 +524,13 @@
         <!---->
       </div>
     </div>
-  </div>
 </form>
-<div id="schedule-student-import" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+<div id="schedule-import" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
   <form class="well form-horizontal" id="importSchedule">
     <div class="modal-dialog modal-dialog-scrollable modal-xl">
       <div class="modal-content">
         <div class="modal-body">
-          <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+          <button type="button" class="close closeForm" data-dismiss="modal" aria-hidden="true"><span
               class="icon-times-rectangle"></span></button>
           <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
           <div class="text-center report-header">
@@ -592,6 +567,21 @@
                 <select name="Format" class="form-control">
                   <option>CSV</option>
                   <option>Excel</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-1"></div>
+              <label class="col-3 control-label">Report Date Range <sup>
+                <span class="icon-asterisk text-warning"></span></sup></label>
+              <div class="col">
+                <select class="form-control date-range__control">
+                  <!-- <optgroup label="Presets"> -->
+                  <option selected="">Last 24 hours</option>
+                  <option>Last 72 hours</option>
+                  <option>Last 7 days</option>
+                  <option>Last 14 days</option>
+                  <option>Last 30 days</option>
                 </select>
               </div>
             </div>
@@ -730,15 +720,60 @@
               </div>
             </div>
             <p class="text-center">Note: Scheduled tasks are processed nightly between Midnight and 8 AM ET</p>
+            <div class="modal-footer">
+              <div class="pull-left">
+                <button type="submit" id="saveBtn2" class="btn btn-primary align-items-end">Save</button>
+                <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
           </div>
-          <!-- Text input-->`
-          <div class="savedForm d-none mt-4">
-            <div id="message"></div>
-          </div>
-          <div class="modal-footer">
-            <div class="pull-left">
-              <button type="submit" class="btn btn-primary align-items-end">Save</button>
-              <button class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+          <div class="savedForm  mt-4">
+            <div class="alert alert-primary" id="alertMessage" role="alert">
+              <div id="message"></div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="text-right my-3">
+                  <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none btn btn-success"
+                     data-toggle='modal'
+                     title="Schedule Report">Add New Schedule</a>
+                </div>
+              </div>
+            </div>
+            <table class="table table-bordered">
+              <tr>
+                <th>Report Name</th>
+                <th>Date Created</th>
+                <th>Frequency</th>
+                <th>Manage</th>
+              </tr>
+              <tr>
+                <td>Student Monthly Report</td>
+                <td>1/1/2020</td>
+                <td>Daily</td>
+                <td>
+                  <div class="d-flex">
+                    <a href="#" class="text-decoration-none mr-3"><span class="icon-pencil"></span> </a>
+                    <a href="#" class="text-decoration-none"><span class="icon-trash-o"></span></a>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Student Daily Report</td>
+                <td>1/1/2020</td>
+                <td>Weekly</td>
+                <td>
+                  <div class="d-flex">
+                    <a href="#" id="editForm" class="text-decoration-none mr-3"><span class="icon-pencil"></span> </a>
+                    <a href="#" id="deleteForm" class="text-decoration-none"><span class="icon-trash-o"></span></a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="modal-footer">
+              <div class="pull-left">
+                <button class="btn btn-secondary" id="savedFormCancel" data-dismiss="modal">Close</button>
+              </div>
             </div>
           </div>
         </div>
@@ -4709,8 +4744,7 @@
         <section class="section">
           <div>
               <span
-                  class="help-block">Date selected must be within one year from today, and date range should not be more than 90 days.
-              </span>
+                  class="help-block">Date selected must be within one year from today, and date range should not be more than 90 days. </span>
           </div>
           <div class="has-error">
             <span class="help-block">Basic error message location and styling if needed.</span>
@@ -4748,6 +4782,16 @@
                 </div>
               </div>
             </div>
+            <!-- <div class="row">
+                          <div class="col-sm-12">
+                          <div class="input-group input-daterange">
+                              <input type="text" class="form-control" value="2012-04-05">
+                              <div class="input-group-addon">to</div>
+                              <input type="text" class="form-control" value="2012-04-19">
+                          </div>
+                          </div>
+                          </div>
+-->
           </div>
         </section>
       </div>
@@ -4756,6 +4800,18 @@
         <button class="btn btn-default" data-dismiss="modal">Close</button>
       </div>
     </div>
+  </div>
+</div>
+<div role="alert" aria-live="assertive" aria-atomic="true" id="alertGrowl" class="toast" data-autohide="false">
+  <div class="toast-header">
+    <strong class="mr-auto">Report Scheduled</strong>
+    <!--<small>11 mins ago</small>-->
+    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="toast-body">
+    Your report was successfully scheduled
   </div>
 </div>
 </body>
