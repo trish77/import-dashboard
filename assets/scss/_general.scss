@@ -210,10 +210,17 @@ a.icon-edit, a.icon-pencil, a.icon-trash-o {
   }
 }
 
-.col-md-12 {
-  .import-result-value {
-    text-align: left;
+.col-lg-6 {
+  .import-result-percent {
+    top: 50px;
   }
+
+  .import-result-container {
+    height: 84px;
+  }
+}
+
+.col-md-12 {
 
   .import-result-container {
     height: 100px;
@@ -225,19 +232,7 @@ a.icon-edit, a.icon-pencil, a.icon-trash-o {
   }
 }
 
-.col-lg-6 {
-  .import-result-value {
-    text-align: right;
-  }
 
-  .import-result-percent {
-    top: 50px;
-  }
-
-  .import-result-container {
-    height: 84px;
-  }
-}
 
 .progress-bar-danger {
   background-color: #d9534f;
@@ -743,8 +738,8 @@ body a:visited {
   text-decoration: none;
 }
 
-.modal-xl .modal-dialog {
-  width: 60vw;
+.modal-dialog.modal-xl {
+  max-width: 85vw !important;
 }
 
 .update-day {
@@ -1204,4 +1199,18 @@ table.dataTable thead td {
   height: 65px;
   background-image: url(../img/logo-General_Hospital-large.png);
   background-repeat: no-repeat;
+}
+#pf, .fp {
+   border-top: 5px solid #007aa3;
+   background: #eee;
+   margin: 0;
+   padding: 0 0 100px;
+ }
+
+#pf #pf-logo, .fp #pf-logo {
+  display: block;
+  width: 150px;
+  height: 30px;
+  background: url(../img/logo-healthstream-small.png) 0 0 no-repeat;
+  margin-bottom: 10px;
 }
