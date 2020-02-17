@@ -32,7 +32,7 @@ gulp.task('vendor:js', function() {
 // Copy font-awesome from node_modules into /fonts
 gulp.task('fonts', function() {
   return  gulp.src([
-    './assets/fonts/icomoon/**/*',
+    './assets/fonts/**/*',
     '!./assets/fonts/icomoon/{css/*}'
   ])
     .pipe(gulp.dest('./dist/assets/fonts'))

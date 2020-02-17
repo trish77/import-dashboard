@@ -74,7 +74,7 @@ $(function () {
     savedForm.style.display = "block";
     setTimeout(function () {
       alertBox.style.display = "none"; // hide the alert box after 1 second
-    }, 2200);
+    }, 4+200);
     //alertBox.alert();
 
   };

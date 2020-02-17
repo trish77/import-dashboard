@@ -3,8 +3,8 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/fonts/OpenSans-Regular-webfont.eot");
-  src: url("../fonts/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/fonts/OpenSans-Regular-webfont.svg#OpenSansLight") format("svg");
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansLight") format("svg");
 }
 
 
@@ -261,9 +261,9 @@ a.icon-edit, a.icon-pencil, a.icon-trash-o {
 }
 
 .import-results-header {
-  width: 75%;
+/*  width: 75%;
   height: 50px;
-  position: absolute;
+  position: absolute;*/
 
   h2 {
     color: #333;
@@ -842,11 +842,11 @@ th {
 /****************** custom fonts *****************/
 @font-face {
   font-family: 'icomoon';
-  src: url('../fonts/fonts/icomoon.eot?girpbf');
-  src: url('../fonts/fonts/icomoon.eot?girpbf#iefix') format('embedded-opentype'),
-  url('../fonts/fonts/icomoon.ttf?girpbf') format('truetype'),
-  url('../fonts/fonts/icomoon.woff?girpbf') format('woff'),
-  url('../fonts/fonts/icomoon.svg?girpbf#icomoon') format('svg');
+  src: url('../fonts/icomoon.eot?girpbf');
+  src: url('../fonts/icomoon.eot?girpbf#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?girpbf') format('truetype'),
+  url('../fonts/icomoon.woff?girpbf') format('woff'),
+  url('../fonts/icomoon.svg?girpbf#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
