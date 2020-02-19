@@ -525,15 +525,14 @@
       <!--<div class="col-lg-6 col-md-12">
         -->
     </div>
-
-
-    </div>
+  </div>
   <div id="pf" class="pf row">
     <div class="p-4">
-      <a target="_blank" href="http://www.healthstream.com/" id="pf-logo">&nbsp;</a>&nbsp;Copyright © 2020 HealthStream, Inc. All Rights Reserved.<br><a target="_blank" href="/HLC/error.aspx">Report a Problem.</a>&nbsp;&nbsp;Build 13.01.28.895.667&nbsp;&nbsp;Feb 12 2020 4:35 PM ET<br><br>O:TBONNETTE10-L&nbsp;&nbsp;A:UNKNOWN&nbsp;&nbsp;C:UNKNOWN&nbsp;&nbsp;AO:50001
+      <a target="_blank" href="http://www.healthstream.com/"
+         id="pf-logo">&nbsp;</a>&nbsp;Copyright © 2020 HealthStream, Inc. All Rights Reserved.<br><a target="_blank"
+                                                                                                     href="/HLC/error.aspx">Report a Problem.</a>&nbsp;&nbsp;Build 13.01.28.895.667&nbsp;&nbsp;Feb 12 2020 4:35 PM ET<br><br>O:TBONNETTE10-L&nbsp;&nbsp;A:UNKNOWN&nbsp;&nbsp;C:UNKNOWN&nbsp;&nbsp;AO:50001
     </div>
   </div>
-
 </form>
 <div id="schedule-import" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
   <form class="well form-horizontal" id="importSchedule">
@@ -567,7 +566,7 @@
               <label class="col-3 control-label">Email Address</label>
               <div class="col">
                 <input name="Email" placeholder="Email" class="form-control" type="text">
-                <p class="small">Multiple email addressese must be separated by semi-colons.</p>
+                <p class="mb-0">Multiple email addresses must be separated by semi-colons.</p>
               </div>
             </div>
             <div class="form-group row">
@@ -742,6 +741,15 @@
             <div class="alert alert-primary" id="alertMessage" role="alert">
               <div id="message"></div>
             </div>
+            <div id="deleteMessage" class="alert alert-danger" style="display: none;">
+              <div class="d-flex align-items-center">
+                <h5 class="mb-0">Are you sure you want to delete your scheduled report</h5>
+                <div class="d-flex ml-auto">
+                  <a href="#" id="yesDelete" class="btn btn-success text-decoration-none mr-3">Yes</a>
+                  <a href="#" id="notDelete" class="btn btn-danger text-decoration-none">No</a>
+                </div>
+              </div>
+            </div>
             <div class="row">
               <div class="col-12">
                 <div class="text-right my-3">
@@ -758,14 +766,14 @@
                 <th>Frequency</th>
                 <th>Manage</th>
               </tr>
-              <tr>
+              <tr id="tr1">
                 <td>Student Monthly Report</td>
                 <td>1/1/2020</td>
                 <td>Daily</td>
                 <td>
                   <div class="d-flex">
-                    <a href="#" class="text-decoration-none mr-3"><span class="icon-pencil"></span> </a>
-                    <a href="#" class="text-decoration-none"><span class="icon-trash-o"></span></a>
+                    <a href="#" id="editForm" class="text-decoration-none mr-3"><span class="icon-pencil"></span> </a>
+                    <a href="#" id="deleteForm" class="text-decoration-none"><span class="icon-trash-o"></span></a>
                   </div>
                 </td>
               </tr>
