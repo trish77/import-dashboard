@@ -69,7 +69,7 @@
   --info: #07a8f9;
   --warning: #8a6d3b;
   --danger: #d9534f;
-  --light: #f8f9fa;
+  --light: #e9ecef;
   --dark: #333;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -2061,23 +2061,23 @@ mark,
 .table-light,
 .table-light > th,
 .table-light > td {
-  background-color: #fdfdfe;
+  background-color: #f9fafb;
 }
 
 .table-light th,
 .table-light td,
 .table-light thead th,
 .table-light tbody + tbody {
-  border-color: #fbfcfc;
+  border-color: #f4f5f7;
 }
 
 .table-hover .table-light:hover {
-  background-color: #ececf6;
+  background-color: #eaedf1;
 }
 
 .table-hover .table-light:hover > td,
 .table-hover .table-light:hover > th {
-  background-color: #ececf6;
+  background-color: #eaedf1;
 }
 
 .table-dark,
@@ -3007,41 +3007,41 @@ fieldset:disabled a.btn {
 
 .btn-light {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #e9ecef;
+  border-color: #e9ecef;
 }
 
 .btn-light:hover {
   color: #212529;
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
+  background-color: #d3d9df;
+  border-color: #cbd3da;
 }
 
 .btn-light:focus, .btn-light.focus {
   color: #212529;
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+  background-color: #d3d9df;
+  border-color: #cbd3da;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5);
 }
 
 .btn-light.disabled, .btn-light:disabled {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #e9ecef;
+  border-color: #e9ecef;
 }
 
 .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
 .show > .btn-light.dropdown-toggle {
   color: #212529;
-  background-color: #dae0e5;
-  border-color: #d3d9df;
+  background-color: #cbd3da;
+  border-color: #c4ccd4;
 }
 
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-light.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(216, 217, 219, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(203, 206, 209, 0.5);
 }
 
 .btn-dark {
@@ -3288,37 +3288,37 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #e9ecef;
+  border-color: #e9ecef;
 }
 
 .btn-outline-light:hover {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #e9ecef;
+  border-color: #e9ecef;
 }
 
 .btn-outline-light:focus, .btn-outline-light.focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5);
 }
 
 .btn-outline-light.disabled, .btn-outline-light:disabled {
-  color: #f8f9fa;
+  color: #e9ecef;
   background-color: transparent;
 }
 
 .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active,
 .show > .btn-outline-light.dropdown-toggle {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #e9ecef;
+  border-color: #e9ecef;
 }
 
 .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-outline-light.dropdown-toggle:focus {
-  -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
-          box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(233, 236, 239, 0.5);
 }
 
 .btn-outline-dark {
@@ -4716,17 +4716,17 @@ input[type="button"].btn-block {
 }
 
 .alert-light {
-  color: #818182;
-  background-color: #fefefe;
-  border-color: #fcfdfd;
+  color: #797b7c;
+  background-color: #fbfbfc;
+  border-color: #f7f8f9;
 }
 
 .alert-light hr {
-  border-top-color: #edf3f3;
+  border-top-color: #e8ebee;
 }
 
 .alert-light .alert-link {
-  color: #686868;
+  color: #606162;
 }
 
 .alert-dark {
@@ -5248,13 +5248,13 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #e9ecef !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
-  background-color: #dae0e5 !important;
+  background-color: #cbd3da !important;
 }
 
 .bg-dark {
@@ -5340,7 +5340,7 @@ button.bg-dark:focus {
 }
 
 .border-light {
-  border-color: #f8f9fa !important;
+  border-color: #e9ecef !important;
 }
 
 .border-dark {
@@ -8694,11 +8694,11 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .text-light {
-  color: #f8f9fa !important;
+  color: #e9ecef !important;
 }
 
 a.text-light:hover, a.text-light:focus {
-  color: #cbd3da !important;
+  color: #bdc6cf !important;
 }
 
 .text-dark {
@@ -8838,8 +8838,8 @@ a.text-dark:hover, a.text-dark:focus {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/fonts/OpenSans-Regular-webfont.eot");
-  src: url("../fonts/fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/fonts/OpenSans-Regular-webfont.svg#OpenSansLight") format("svg");
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#OpenSansLight") format("svg");
 }
 
 a:focus, :focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
@@ -9092,9 +9092,9 @@ a.icon-edit:hover, a.icon-pencil:hover, a.icon-trash-o:hover {
 }
 
 .import-results-header {
-  width: 75%;
+  /*  width: 75%;
   height: 50px;
-  position: absolute;
+  position: absolute;*/
 }
 
 .import-results-header h2 {
@@ -9555,7 +9555,7 @@ body a:visited {
 }
 
 .modal-dialog.modal-xl {
-  max-width: 85vw !important;
+  max-width: 90vw !important;
 }
 
 .update-day {
@@ -9633,14 +9633,6 @@ th {
   font-size: 11px !important;
 }
 
-/*
-.icon-download, .icon-refresh, .icon-calendar-plus-o{
-  margin-right: 13px;
-  color: #bbb;
-  margin-top: 10px;
-  font-size: 20px;
-}
-*/
 .checkbox {
   margin: 10px;
 }
@@ -9656,8 +9648,8 @@ th {
 /****************** custom fonts *****************/
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/fonts/icomoon.eot?girpbf");
-  src: url("../fonts/fonts/icomoon.eot?girpbf#iefix") format("embedded-opentype"), url("../fonts/fonts/icomoon.ttf?girpbf") format("truetype"), url("../fonts/fonts/icomoon.woff?girpbf") format("woff"), url("../fonts/fonts/icomoon.svg?girpbf#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?girpbf");
+  src: url("../fonts/icomoon.eot?girpbf#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?girpbf") format("truetype"), url("../fonts/icomoon.woff?girpbf") format("woff"), url("../fonts/icomoon.svg?girpbf#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -10004,13 +9996,12 @@ table.dataTable thead td {
   font-size: 32px;
 }
 
-.ph {
+/*.ph {
   width: 100%;
   height: 65px;
   background-image: url(../img/logo-General_Hospital-large.png);
   background-repeat: no-repeat;
-}
-
+}*/
 #pf, .fp {
   border-top: 5px solid #007aa3;
   background: #eee;
@@ -10022,7 +10013,7 @@ table.dataTable thead td {
   display: block;
   width: 150px;
   height: 30px;
-  background: url(../img/logo-healthstream-small.png) 0 0 no-repeat;
+  /* background: url(../img/logo-healthstream-small.png) 0 0 no-repeat;*/
   margin-bottom: 10px;
 }
 

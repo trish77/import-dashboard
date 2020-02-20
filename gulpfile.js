@@ -60,7 +60,6 @@ gulp.task('vendor:build', function() {
     './assets/js/vendor/b-popper.js',
     './assets/js/vendor/bootstrap.js',
     './assets/js/vendor/c-datatables.js',
-    './assets/js/vendor/gijgo.js',
     './assets/js/vendor/dataTables.rowReorder.min.js',
     './assets/js/vendor/prototype.datatables.js',
     './assets/js/vendor/theApp.js',
@@ -134,7 +133,7 @@ gulp.task('dev', function browserDev(done) {
     },
     port: 3030
   });
-  gulp.watch(['assets/scss/*.scss','assets/scss/**/*.scss','!assets/scss/bootstrap/**'], gulp.series('css:minify', function cssBrowserReload (done) {
+  gulp.watch(['assets/scss/*.scss','assets/scss/**/*.scss','!assets/scss/bootstrap/**', "assets/js/*.js"], gulp.series('css:minify', 'js:minify', function cssBrowserReload (done) {
     browserSync.reload();
     done(); //Async callback for completion.
   }));
@@ -147,7 +146,7 @@ gulp.task('dev', function browserDev(done) {
 });
 
 // Build task
-gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify', 'fonts'), function copyAssets() {
+gulp.task("build", gulp.series(gulp.parallel('css:minify',  'fonts'), function copyAssets() {
   return gulp.src([
     '*.html',
     'favicon.ico',
@@ -157,4 +156,4 @@ gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify', 'fonts')
 }));
 
 // Default task
-gulp.task("default", gulp.series("dev", "clean", 'build', 'replaceHtmlBlock'));
+gulp.task("default", gulp.series("dev", "clean", 'build', 'js:minify', 'replaceHtmlBlock'));

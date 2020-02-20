@@ -739,7 +739,7 @@ body a:visited {
 }
 
 .modal-dialog.modal-xl {
-  max-width: 85vw !important;
+  max-width: 90vw !important;
 }
 
 .update-day {
@@ -817,15 +817,6 @@ th {
 .text-small, .icon-asterisk {
   font-size: 11px !important;
 }
-
-/*
-.icon-download, .icon-refresh, .icon-calendar-plus-o{
-  margin-right: 13px;
-  color: #bbb;
-  margin-top: 10px;
-  font-size: 20px;
-}
-*/
 
 .checkbox {
   margin: 10px;
@@ -1194,12 +1185,12 @@ table.dataTable thead td {
   font-size: 32px;
 }
 
-.ph {
+/*.ph {
   width: 100%;
   height: 65px;
   background-image: url(../img/logo-General_Hospital-large.png);
   background-repeat: no-repeat;
-}
+}*/
 #pf, .fp {
    border-top: 5px solid #007aa3;
    background: #eee;
@@ -1211,6 +1202,6 @@ table.dataTable thead td {
   display: block;
   width: 150px;
   height: 30px;
-  background: url(../img/logo-healthstream-small.png) 0 0 no-repeat;
+ /* background: url(../img/logo-healthstream-small.png) 0 0 no-repeat;*/
   margin-bottom: 10px;
 }

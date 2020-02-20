@@ -48,11 +48,11 @@ $(function () {
   const url = location.href; //  href for the page
   const formIdentifier = `${url} ${formId}`; // Identifier used to identify the form
   const saveButton = document.querySelector("#saveBtn2"); // select save button
-  const message = "Report has been scheduled!";
   const wrapper = document.querySelector(".wrapper");
   const savedForm = document.querySelector(".savedForm");
   const closeModal = document.querySelector("#savedFormCancel");
   const alertBox = document.querySelector("#alertMessage");
+  let message = "Your report has been scheduled!";
   let iconCounter;
   let form = document.querySelector(`#${formId}`), // select form
     formElements = form.elements; // get the elements in the form
@@ -74,7 +74,7 @@ $(function () {
     savedForm.style.display = "block";
     setTimeout(function () {
       alertBox.style.display = "none"; // hide the alert box after 1 second
-    }, 4+200);
+    }, 4200);
     //alertBox.alert();
 
   };
@@ -98,17 +98,17 @@ $(function () {
 
       for (iconCounter = 0; iconCounter < formIcons.length; iconCounter++) {
 
-        if (iconCounter === 0) {
+        if (formIcons[0]) {
           addFormIcon.children().replaceWith('<span class="' + formIcons[0] + ' ' + 'text-secondary"></span>');
           $('.wrapper').show();
           $('.savedForm').hide();
           break;
-        } else if (iconCounter === 1) {
+        } else if (formIcons[1]) {
           addFormIcon.children().replaceWith('<span class="' + formIcons[1] + ' ' + 'text-secondary"></span>');
           $('.wrapper').show();
           $('.savedForm').hide();
           break;
-        } else if (iconCounter === 2) {
+        } else if (formIcons[2]) {
           addFormIcon.children().replaceWith('<span class="' + formIcons[2] + ' ' + 'text-secondary"></span>');
           $('.wrapper').show();
           $('.savedForm').hide();
@@ -142,55 +142,26 @@ $(function () {
     $('.wrapper').show();
     $('.savedForm').hide();
     populateForm();
-
   });
 
-  /* $('#saveBtn').on('click', function (event) {
-     event.preventDefault();
-     const data = getFormData();
-     localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
-     const message = "Form draft has been saved!";
-     $('#schedule-import').dispose();
-     $('#schedule-import').on('hidden.bs.modal', function (e) {
-       $('#alertGrowl').toast({
-         title: 'Success',
-         content: message,
-         type: 'success',
-         delay: 5000
-       });
+  $('body').on('click', '#deleteForm', function (event) {
+    var thisTR = $($(this)).closest('tr');
+    thisTR.addClass('bg-light');
+    var deleteMessage = $('#deleteMessage');
+    deleteMessage.fadeIn();
+  });
 
-       // make the alert box visible
-       /!* setTimeout(function() {
-          alertGrowl.style.display = "none"; // hide the alert box after 1 second
-        }, 1000);*!/
-     });
-   });
+  $('body').on('click', '#yesDelete', function (event) {
+    var deleteMessage = $('#deleteMessage');
+    var thisTR = $('.savedForm').find('.bg-light').remove();
+    deleteMessage.fadeOut();
+  });
 
-   $('#saveBtn2').on('click', function (event) {
-     event.preventDefault();
-     const data = getFormData();
-     localStorage.setItem(formIdentifier, JSON.stringify(data[formIdentifier]));
-     const message = "Form draft has been saved!";
-     const alertBox = document.querySelector("#alertMessage");
-     $('.wrapper').addClass('d-none');
-     $('savedForm').removeClass('d-none');
-
-
-     /!* $('#alertGrowl').toast({
-        title: 'Success',
-        content: message,
-        type: 'success',
-        delay: 5000
-      });*!/
-
-     // make the alert box visible
-     /!* setTimeout(function() {
-        alertGrowl.style.display = "none"; // hide the alert box after 1 second
-      }, 1000);*!/
-
-   });*/
-
-
+  $('body').on('click', '#notDelete', function (event) {
+    var deleteMessage = $('#deleteMessage'),
+        removeHighlight = $('.savedForm').find('.bg-light').removeClass('bg-light');
+    deleteMessage.fadeOut();
+  });
 });
 
 (function (window, $) {
