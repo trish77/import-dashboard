@@ -192,15 +192,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     studentImportProgressSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(studentImportProgressSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(studentImportProgressSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -246,15 +246,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     studentImportSuccessTbl.columns().iterator('column', function (ctx, idx) {
-      $(studentImportSuccessTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(studentImportSuccessTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -300,15 +300,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     studentImportSuccessSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(studentImportSuccessSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(studentImportSuccessSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -354,15 +354,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     studentImportErrorSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(studentImportErrorSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(studentImportErrorSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -407,15 +407,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     studentImportErrorDetailTbl.columns().iterator('column', function (ctx, idx) {
-      $(studentImportErrorDetailTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(studentImportErrorDetailTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -460,14 +460,14 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
     jobFunctionProgressSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(jobFunctionProgressSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(jobFunctionProgressSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -513,15 +513,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     jobFunctionSuccessSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(jobFunctionSuccessSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(jobFunctionSuccessSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -567,15 +567,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     jobFunctionSuccessTbl.columns().iterator('column', function (ctx, idx) {
-      $(jobFunctionSuccessTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(jobFunctionSuccessTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -621,15 +621,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     jobFunctionErrorSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(jobFunctionErrorSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(jobFunctionErrorSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -674,15 +674,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     jobFunctionErrorDetailTbl.columns().iterator('column', function (ctx, idx) {
-      $(jobFunctionErrorDetailTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(jobFunctionErrorDetailTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -727,15 +727,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     suppMgrImportSuccessTbl.columns().iterator('column', function (ctx, idx) {
-      $(suppMgrImportSuccessTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(suppMgrImportSuccessTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -781,15 +781,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     suppMgrImportSuccessSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(suppMgrImportSuccessSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(suppMgrImportSuccessSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -835,15 +835,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     suppMgrImportErrorSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(suppMgrImportErrorSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(suppMgrImportErrorSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -889,15 +889,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     suppMgrImportErrorDetailTbl.columns().iterator('column', function (ctx, idx) {
-      $(suppMgrImportErrorDetailTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(suppMgrImportErrorDetailTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -943,15 +943,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     roleImportProgressSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(roleImportProgressSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(roleImportProgressSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -997,15 +997,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     roleImportSuccessSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(roleImportSuccessSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(roleImportSuccessSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -1051,15 +1051,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     roleImportErrorSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(roleImportErrorSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(roleImportErrorSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -1105,15 +1105,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     roleActionSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(roleActionSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(roleActionSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -1159,15 +1159,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     roleImportErrorDetailTbl.columns().iterator('column', function (ctx, idx) {
-      $(roleImportErrorDetailTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(roleImportErrorDetailTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -1213,15 +1213,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     licenseImportSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(licenseImportSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(licenseImportSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -1267,15 +1267,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     licenseImportProgressSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(licenseImportProgressSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(licenseImportProgressSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -1321,15 +1321,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     licenseImportSuccessSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(licenseImportSuccessSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(licenseImportSuccessSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -1375,15 +1375,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     licenseImportErrorSummaryTbl.columns().iterator('column', function (ctx, idx) {
-      $(licenseImportErrorSummaryTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(licenseImportErrorSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -1429,15 +1429,15 @@ $(function () {
         searchPlaceholder: "Quick Search",
         lengthMenu: "Show _MENU_ records",
         paginate: {
-          previous: '<i class="fa fa-chevron-left"></i>',
-          next: '<i class="fa fa-chevron-right"></i>'
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
         }
       },
       "pageLength": 5
     });
 
     licenseImportErrorDetailTbl.columns().iterator('column', function (ctx, idx) {
-      $(licenseImportErrorDetailTbl.column(idx).header()).append('<span class="sort-icon"/>');
+      $(licenseImportErrorDetailTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
     expandMobileRow();
@@ -1450,6 +1450,275 @@ $(function () {
     function updateTableHeaderFooter() {
       $(".dataTables_info").hide();
       $('.LicenseImportErrorDetailHeader').html($("#licenseImportErrorDetail_info").html());
+    }
+
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on('draw.dt', function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
+  healthStream.certificationProgressSummary = {};
+  healthStream.certificationProgressSummary.resultsDataTable = function () {
+    var certificationProgressSummaryTbl = $('#certificationProgressSummary').DataTable({
+      "bSortClasses": false,
+      "paging": true,
+      "order": [
+        [0, "asc"]
+      ],
+      "dom": 'ft<"certificationProgressSummaryBottom"rlip>',
+      "columnDefs": [{
+        "visible": false,
+        "targets": "hideOnLoad",
+      }, {
+        "orderable": false,
+        "targets": "unsortable"
+      }],
+      "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
+        }
+      },
+      "pageLength": 5
+    });
+    certificationProgressSummaryTbl.columns().iterator('column', function (ctx, idx) {
+      $(certificationProgressSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(certificationProgressSummaryTbl);
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      // $('.SupplementalMgrImportProgressSummaryHeader').html($("#suppMgrImportProgressSummary_info").html());
+    }
+
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on('draw.dt', function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
+  healthStream.certificationSuccessSummary = {};
+  healthStream.certificationSuccessSummary.resultsDataTable = function () {
+    var certificationSuccessSummaryTbl = $('#certificationSuccessSummary').DataTable({
+      "bSortClasses": false,
+      "paging": true,
+      "order": [
+        [0, "asc"]
+      ],
+      "dom": 'ft<"certificationSuccessBottom"rlip>',
+      "columnDefs": [{
+        "visible": false,
+        "targets": "hideOnLoad",
+      }, {
+        "orderable": false,
+        "targets": "unsortable"
+      }],
+      "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
+        }
+      },
+      "pageLength": 5
+    });
+
+    certificationSuccessSummaryTbl.columns().iterator('column', function (ctx, idx) {
+      $(certificationSuccessSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(certificationSuccessSummaryTbl);
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $('.jobFunctionHeader').html($("#jobFunctionSuccess_info").html());
+    }
+
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on('draw.dt', function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
+  healthStream.certificationSuccess = {};
+  healthStream.certificationSuccess.resultsDataTable = function () {
+    var certificationSuccessTbl = $('#certificationSuccess').DataTable({
+      "bSortClasses": false,
+      "paging": true,
+      "order": [
+        [0, "asc"]
+      ],
+      "dom": 'ft<"certificationSuccessBottom"rlip>',
+      "columnDefs": [{
+        "visible": false,
+        "targets": "hideOnLoad",
+      }, {
+        "orderable": false,
+        "targets": "unsortable"
+      }],
+      "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
+        }
+      },
+      "pageLength": 5
+    });
+
+    certificationSuccessTbl.columns().iterator('column', function (ctx, idx) {
+      $(certificationSuccessTbl.column(idx).header()).append('<span class="icon-sort"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(certificationSuccessTbl);
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $('.certificationSuccessHeader').html($("#certificationSuccess_info").html());
+    }
+
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on('draw.dt', function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
+  healthStream.certificationErrorSummary = {};
+  healthStream.certificationErrorSummary.resultsDataTable = function () {
+    var certificationErrorSummaryTbl = $('#certificationErrorSummary').DataTable({
+      "bSortClasses": false,
+      "paging": true,
+      "order": [
+        [0, "asc"]
+      ],
+      "dom": 'ft<"certificationErrorSummaryBottom"rlip>',
+      "columnDefs": [{
+        "visible": false,
+        "targets": "hideOnLoad",
+      }, {
+        "orderable": false,
+        "targets": "unsortable"
+      }],
+      "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
+        }
+      },
+      "pageLength": 5
+    });
+
+    certificationErrorSummaryTbl.columns().iterator('column', function (ctx, idx) {
+      $(certificationErrorSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(certificationErrorSummaryTbl);
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $('.certificationErrorSummaryHeader').html($("#certificationErrorSummary_info").html());
+    }
+
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on('draw.dt', function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
+  healthStream.certificationErrorDetail = {};
+  healthStream.certificationErrorDetail.resultsDataTable = function () {
+    var certificationErrorDetailTbl = $('#certificationErrorDetail').DataTable({
+      "bSortClasses": false,
+      "paging": true,
+      "order": [
+        [0, "asc"]
+      ],
+      "dom": 'ft<"certificationErrorDetailBottom"rlip>',
+      "columnDefs": [{
+        "visible": false,
+        "targets": "hideOnLoad",
+      }, {
+        "orderable": false,
+        "targets": "unsortable"
+      }],
+      "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
+        }
+      },
+      "pageLength": 5
+    });
+
+    certificationErrorDetailTbl.columns().iterator('column', function (ctx, idx) {
+      $(certificationErrorDetailTbl.column(idx).header()).append('<span class="icon-sort"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(certificationErrorDetailTbl);
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $('.certificationErrorDetailHeader').html($("#certificationErrorDetail_info").html());
     }
 
     //reinitialize jquery when table is redrawn (pagination)
@@ -1492,6 +1761,13 @@ $(function () {
     healthStream.licenseImportSuccessSummary.resultsDataTable();
     healthStream.licenseImportErrorSummary.resultsDataTable();
     healthStream.licenseImportErrorDetail.resultsDataTable();
+
+    healthStream.certificationProgressSummary.resultsDataTable();
+    healthStream.certificationSuccessSummary.resultsDataTable();
+    healthStream.certificationSuccess.resultsDataTable();
+    healthStream.certificationErrorSummary.resultsDataTable();
+    healthStream.certificationErrorDetail.resultsDataTable();
+
 
 
   });

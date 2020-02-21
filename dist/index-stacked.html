@@ -520,6 +520,80 @@
             </div>
           </div>
         </div>
+        <div class="row mt-4">
+          <div class="col-md-8">
+            <div class="import-result-heading p-0">Student Certification Import
+              &nbsp;<small>(9 imports)</small>
+            </div>
+          </div>
+          <div class="col-md-4 text-right">
+            <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
+            <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
+            <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
+               title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-4 pr-0">
+            <a href="#student-certification-progress" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col px-0 pb-lg-1">
+                  <div class="import-result">In&nbsp;Progress</div>
+                </div>
+                <div class="col px-0 pb-lg-1">
+                  <div class="import-result-value">10</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 5%;background-color:#F0C109">
+                  <span class="sr-only">5% In Progress</span>
+                  <span class="import-result-percent">5%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-4 pr-0">
+            <a href="#student-certification-success" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col px-0 pb-lg-1">
+                  <div class="import-result"> Success</div>
+                </div>
+                <div class="col px-0 pb-lg-1">
+                  <div class="import-result-value">698</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-success" style="width: 64%">
+                  <span class="sr-only">64% Success</span>
+                  <span class="import-result-percent">64%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-4 pr-0">
+            <a href="#student-certification-error" data-toggle="modal"
+               class="import-result-container import-result-error">
+              <div class="row px-3">
+                <div class="col pb-lg-1">
+                  <div class="import-result"> Error</div>
+                </div>
+                <div class="col px-0 pb-lg-1">
+                  <div class="import-result-value">390</div>
+                </div>
+              </div>
+              <div class="progress px-0 row">
+                <div class="progress-bar progress-bar-danger" style="width: 36%">
+                  <span class="sr-only">36% Error</span>
+                  <span class="import-result-percent">36%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
       </div>
       <!-- <button class="btn btn-default" style="margin-top:15px;margin-bottom:15px;"><i class="fa fa-cog"></i> Manage Import Settings</button> -->
       <!--<div class="col-lg-6 col-md-12">
@@ -529,8 +603,8 @@
   <div id="pf" class="pf row">
     <div class="p-4">
       <a target="_blank" href="http://www.healthstream.com/"
-         id="pf-logo">&nbsp;</a>&nbsp;Copyright © 2020 HealthStream, Inc. All Rights Reserved.<br><a target="_blank"
-                                                                                                     href="/HLC/error.aspx">Report a Problem.</a>&nbsp;&nbsp;Build 13.01.28.895.667&nbsp;&nbsp;Feb 12 2020 4:35 PM ET<br><br>O:TBONNETTE10-L&nbsp;&nbsp;A:UNKNOWN&nbsp;&nbsp;C:UNKNOWN&nbsp;&nbsp;AO:50001
+         id="pf-logo">&nbsp;</a>&nbsp;Copyright © 2020 HealthStream, Inc. All Rights Reserved.<br>
+      <a target="_blank"  href="/HLC/error.aspx">Report a Problem.</a>&nbsp;&nbsp;Build 1.1.7&nbsp;&nbsp;Feb 22 2020 4:35 PM ET<br><br>O:TBONNETTE10-L&nbsp;&nbsp;A:UNKNOWN&nbsp;&nbsp;C:UNKNOWN&nbsp;&nbsp;AO:50001
     </div>
   </div>
 </form>
@@ -766,7 +840,7 @@
                 <th>Frequency</th>
                 <th>Manage</th>
               </tr>
-              <tr id="tr1">
+              <tr>
                 <td>Student Monthly Report</td>
                 <td>1/1/2020</td>
                 <td>Daily</td>
@@ -4817,6 +4891,339 @@
       <div class="modal-footer">
         <button class="btn btn-success" data-dismiss="modal" id="rangeSelect">Apply</button>
         <button class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="student-certification-progress" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">Trinity Health</div>
+          <div class="h2">Student Certification Import In Progress Report</div>
+          <div class="h4"><strong>Date Range:</strong> July 01, 2018 - August 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Oct 23, 2018</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="certificationProgressSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>LUMC - Loyola University Medical Center</td>
+              <td>In Progress</td>
+              <td>4</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/28/2018</td>
+              <td>LUMC - Loyola University Medical Center</td>
+              <td>In Pogress</td>
+              <td>7</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="student-certification-success" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Student Certification Import Success Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table table-striped dataTable" id="certificationSuccessSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>Completed</td>
+              <td>30</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>Completed</td>
+              <td>14</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Completed</td>
+              <td>15</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Action Summary</div>
+          <table class="table  table-striped dataTable" id="certificationSuccess">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th class="institution">Institution</th>
+              <th class="added">Certifications <br>Added</th>
+              <th class="updated">Certifications<br> Updated</th>
+              <th class="removed">Certifications<br> Removed</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/19/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="student-certification-error" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Student Certification Import Error Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="certificationErrorSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Failed</td>
+              <td>2</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Error Detail</div>
+          <table class="table  table-striped dataTable" id="certificationErrorDetail">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Date</th>
+              <th>Institution</th>
+              <th>User ID</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>4055932</td>
+            </tr>
+            <tr>
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>5009623</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
       </div>
     </div>
   </div>

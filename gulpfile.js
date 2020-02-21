@@ -146,7 +146,7 @@ gulp.task('dev', function browserDev(done) {
 });
 
 // Build task
-gulp.task("build", gulp.series(gulp.parallel('css:minify',  'fonts'), function copyAssets() {
+gulp.task("build", gulp.series(gulp.parallel('css:minify', 'js:minify',  'fonts'), function copyAssets() {
   return gulp.src([
     '*.html',
     'favicon.ico',
@@ -156,4 +156,4 @@ gulp.task("build", gulp.series(gulp.parallel('css:minify',  'fonts'), function c
 }));
 
 // Default task
-gulp.task("default", gulp.series("dev", "clean", 'build', 'js:minify', 'replaceHtmlBlock'));
+gulp.task("default", gulp.series("dev", "clean", 'build', 'replaceHtmlBlock'));

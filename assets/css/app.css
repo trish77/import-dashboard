@@ -9253,42 +9253,52 @@ table.dataTable thead th.sorting_desc {
   background-color: transparent !important;
 }
 
-table.dataTable thead span.sort-icon {
+table.dataTable thead span.icon-sort {
   display: inline-block;
   padding-left: 5px;
-  width: 16px;
-  height: 16px;
+  font-size: 16px !important;
   padding-right: 10px;
 }
 
-table.dataTable thead .sorting span.sort-icon:after {
+/*
+table.dataTable thead .sorting span.icon-sort:after {
   opacity: .2;
   content: "\f0dc";
-  font-family: FontAwesome;
+  font-family: icomoon;
+}
+*/
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .icon-sort:before {
+  content: "";
 }
 
-table.dataTable thead .sorting_desc span.sort-icon:after {
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before {
+  content: "";
+}
+
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before {
+  content: "";
+}
+
+table.dataTable thead .sorting span.icon-sort:after {
+  opacity: 1;
+  content: "\f0dc";
+  font-family: icomoon;
+}
+
+table.dataTable thead .sorting_desc span.icon-sort:after {
   opacity: 1;
   content: "\f0dd";
-  font-family: FontAwesome;
+  font-family: icomoon;
 }
 
-table.dataTable thead .sorting_asc span.sort-icon:after {
+table.dataTable thead .sorting_asc span.icon-sort:after {
   opacity: 1;
   content: "\f0de";
-  font-family: FontAwesome;
-}
-
-table.dataTable thead .sorting:after {
-  content: "";
-}
-
-table.dataTable thead .sorting_asc:after {
-  content: "";
-}
-
-table.dataTable thead .sorting_desc:after {
-  content: "";
+  font-family: icomoon;
 }
 
 .dataTables_wrapper::after {
@@ -9451,7 +9461,12 @@ div.dataTables_wrapper div.dataTables_length label {
 .licenseImportSuccessSummaryBottom,
 .licenseImportErrorSummaryBottom,
 .licenseImportErrorDetailBottom,
-.licenseImportProgressSummaryBottom {
+.licenseImportProgressSummaryBottom,
+.certificationErrorDetailBottom,
+.certificationErrorSummaryBottom,
+.certificationSuccessBottom,
+.certificationSuccessSummaryTbl,
+.certificationProgressSummaryBottom {
   float: right;
   margin-right: 20px;
 }
@@ -9502,6 +9517,10 @@ table.dataTable thead .sorting_desc,
 table.dataTable thead .sorting_desc_disabled {
   cursor: pointer;
   position: relative;
+}
+
+.display thead th.sorting.sorting_desc, .display thead th.sorting_asc, .display thead th.sorting_desc, .team-table thead th.sorting.sorting_asc, table.dataTable thead th.sorting.sorting_asc, table.dataTable thead th.sorting.sorting_desc, table.dataTable thead th.sorting_asc, table.dataTable thead th.sorting_desc {
+  font-weight: 700;
 }
 
 /*Custom*/
@@ -9602,15 +9621,13 @@ th {
   font-weight: 600;
 }
 
-.display thead th.sorting.sorting_desc, .display thead th.sorting_asc, .display thead th.sorting_desc, .team-table thead th.sorting.sorting_asc, table.dataTable thead th.sorting.sorting_asc, table.dataTable thead th.sorting.sorting_desc, table.dataTable thead th.sorting_asc, table.dataTable thead th.sorting_desc {
-  font-weight: 700;
-}
-
 .top-records-msg {
-  margin-top: -43px;
-  height: 50px;
+  display: inline-block;
+  height: 20px;
   color: #777;
   font-style: italic;
+  margin-bottom: 15px;
+  margin-top: -20px;
 }
 
 .change-date-range {
@@ -9648,8 +9665,8 @@ th {
 /****************** custom fonts *****************/
 @font-face {
   font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot?girpbf");
-  src: url("../fonts/icomoon.eot?girpbf#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?girpbf") format("truetype"), url("../fonts/icomoon.woff?girpbf") format("woff"), url("../fonts/icomoon.svg?girpbf#icomoon") format("svg");
+  src: url("../fonts/icomoon.eot?7rpqy7");
+  src: url("../fonts/icomoon.eot?7rpqy7#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?7rpqy7") format("truetype"), url("../fonts/icomoon.woff?7rpqy7") format("woff"), url("../fonts/icomoon.svg?7rpqy7#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -9657,7 +9674,7 @@ th {
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -9707,6 +9724,10 @@ th {
 
 .icon-calendar-9-plus:before {
   content: "\e909";
+}
+
+.icon-asterisk:before {
+  content: "\f069";
 }
 
 .icon-close:before {
@@ -9809,12 +9830,28 @@ th {
   content: "\f0da";
 }
 
+.icon-sort:before {
+  content: "\f0dc";
+}
+
+.icon-unsorted:before {
+  content: "\f0dc";
+}
+
 .icon-sort-asc:before {
   content: "\f0de";
 }
 
 .icon-sort-up:before {
   content: "\f0de";
+}
+
+.icon-sort-desc:before {
+  content: "\f0dd";
+}
+
+.icon-sort-down:before {
+  content: "\f0dd";
 }
 
 .icon-angle-double-up:before {
@@ -9826,15 +9863,15 @@ th {
 }
 
 .icon-spinner:before {
-  font-size: 60px;
-  color: #5a6268;
-  -webkit-animation: spin 1s linear infinite;
-          animation: spin 1s linear infinite;
   content: "\f110";
 }
 
 .icon-calendar-o:before {
   content: "\f133";
+}
+
+.icon-trash:before {
+  content: "\f1f8";
 }
 
 .icon-user-times:before {
@@ -9891,10 +9928,6 @@ th {
 
 .icon-spellcheck:before {
   content: "\e8ce";
-}
-
-.icon-asterisk:before {
-  content: "\f069";
 }
 
 /********** from app.css *******/
