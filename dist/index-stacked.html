@@ -290,6 +290,25 @@
         </div>
         <div class="row">
           <div class="col-4 pr-0">
+            <a href="#supplemental-import-progress" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col px-0 pb-lg-1">
+                  <div class="import-result">In&nbsp;Progress</div>
+                </div>
+                <div class="col px-0 pb-lg-1">
+                  <div class="import-result-value">10</div>
+                </div>
+              </div>
+              <div class="progress row">
+                <div class="progress-bar progress-bar-success" style="width: 5%;background-color:#F0C109">
+                  <span class="sr-only">5% In Progress</span>
+                  <span class="import-result-percent">5%</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-4 pr-0">
             <a href="#modal-supplemental-mgr-report-success" data-toggle="modal"
                class="import-result-container import-result-success">
               <div class="row px-3">
@@ -335,14 +354,14 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 text-right">
+          <div class="col-md-4 text-right pr-0">
             <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
             <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
             <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
                title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
-        <div class="row pr-sm-4">
+        <div class="row">
           <div class="col-4 pr-0">
             <a href="#modal-report" data-toggle="modal" class="import-result-container import-result-success">
               <div class="row px-3">
@@ -403,14 +422,14 @@
             <div class="import-result-heading p-0">Student License Import &nbsp;<small>(4 files)</small>
             </div>
           </div>
-          <div class="col-md-4 text-right">
+          <div class="col-md-4 text-right pr-0">
             <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
             <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
             <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
                title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
-        <div class="row pr-sm-4">
+        <div class="row">
           <div class="col-4 pr-0">
             <a href="#modal-license-import-progress" data-toggle="modal"
                class="import-result-container import-result-success">
@@ -475,16 +494,35 @@
               &nbsp;<small>(1 import)</small>
             </div>
           </div>
-          <div class="col-md-4 text-right">
+          <div class="col-md-4 text-right pr-0">
             <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
             <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
             <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
                title="Schedule Report"><span class="icon-calendar-plus-o text-secondary"></span></a>
           </div>
         </div>
-        <div class="row pr-sm-4">
+        <div class="row">
+          <div class="col-4 pr-0">
+            <a href="#supervisor-import-progress" data-toggle="modal"
+               class="import-result-container import-result-success">
+              <div class="row px-3">
+                <div class="col px-0 pb-lg-1">
+                  <div class="import-result">In&nbsp;Progress</div>
+                </div>
+                <div class="col px-0 pb-lg-1">
+                  <div class="import-result-value">10</div>
+                </div>
+              </div>
+              <div class="progress row">
+                <div class="progress-bar progress-bar-success" style="width: 5%;background-color:#F0C109">
+                  <span class="sr-only">5% In Progress</span>
+                  <span class="import-result-percent">5%</span>
+                </div>
+              </div>
+            </a>
+          </div>
           <div class="col-4">
-            <a href="#modal-report" data-toggle="modal" class="import-result-container">
+            <a href="#supervisor-import-success" data-toggle="modal" class="import-result-container">
               <div class="row px-3">
                 <div class="col px-0 pb-lg-1">
                   <div class="import-result"> Success</div>
@@ -526,7 +564,7 @@
               &nbsp;<small>(9 imports)</small>
             </div>
           </div>
-          <div class="col-md-4 text-right">
+          <div class="col-md-4 text-right pr-0">
             <a href="#" class="text-decoration-none"><span class="icon-refresh"></span></a>
             <a href="#" class="text-decoration-none"><span class="icon-download"></span></a>
             <a href="#schedule-import" id="newStudentImportReport" class="text-decoration-none" data-toggle='modal'
@@ -1064,6 +1102,7 @@
     </div>
   </div>
 </div>
+
 <div id="modal-student-import-progress" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
   <div class="modal-dialog  modal-xl">
     <div class="modal-content">
@@ -3526,6 +3565,69 @@
     </div>
   </div>
 </div>
+
+<div id="supplemental-import-progress" class="modal fade  modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">Trinity Health</div>
+          <div class="h2">Supplemental Manager Import In Progress Report</div>
+          <div class="h4"><strong>Date Range:</strong> July 01, 2018 - August 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Oct 23, 2018</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable" id="supplementalImportProgressSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>LUMC - Loyola University Medical Center</td>
+              <td>Started</td>
+              <td>4</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/28/2018</td>
+              <td>LUMC - Loyola University Medical Center</td>
+              <td>Started</td>
+              <td>7</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <div id="modal-supplemental-mgr-report-success" class="modal fade modal-report" tabindex="-1"
      aria-hidden="false">
   <div class="modal-dialog modal-xl">
@@ -4895,6 +4997,266 @@
     </div>
   </div>
 </div>
+<div id="supervisor-import-progress" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog  modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Supervisor Import In Progress Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table  table-striped dataTable supervisorImportProgressSummary"
+                 id="supervisorImportProgressSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>In Progress</td>
+              <td>2</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>In Progress</td>
+              <td>2</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>In Progress</td>
+              <td>2</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="supervisor-import-success" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
+            class="icon-times-rectangle"></span></button>
+        <!-- <h2>Supplemental Manager Report<small>- 698 of 1088 records imported successfully</small></h2> -->
+        <div class="text-center report-header">
+          <div class="h3">HLC Test Facility</div>
+          <div class="h2">Supervisor Import Success Report</div>
+          <div class="h4"><strong>Date Range:</strong> Jul 01, 2018 through Jul 31, 2018</div>
+          <div class="h4"><strong>Report Generated:</strong> Aug 16, 2018, 2:18 pm ET</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Status Summary</div>
+          <table class="table table-striped dataTable" id="supervisorSuccessSummary">
+            <thead>
+            <tr class="table-row stripe">
+              <th>Update Day</th>
+              <th>Institution</th>
+              <th>Status</th>
+              <th>Records</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>Completed</td>
+              <td>30</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>Completed</td>
+              <td>14</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/19/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>Completed</td>
+              <td>15</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+        <div class="dataTable-container">
+          <div class="h3">Import Action Summary</div>
+          <table class="table  table-striped dataTable" id="supervisorSuccess">
+            <thead>
+            <tr class="table-row stripe">
+              <th class="update-day">Update Day</th>
+              <th class="institution">Institution</th>
+              <th class="added">Supervisors <br>Added</th>
+              <th class="updated">Supervisors<br> Updated</th>
+              <th class="removed">Supervisors<br> Removed</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/19/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>ARSVH - St. Vincent Health System - Little Rock</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            <tr class="table-row stripe">
+              <td>7/11/2018</td>
+              <td>CHHCO - CHI Health at Home - Corporate Staff</td>
+              <td>6</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+            <tr class="table-row">
+              <td>7/11/2018</td>
+              <td>CHHME - CHI Health at Home - Home Medical Equipment</td>
+              <td>6</td>
+              <td>24</td>
+              <td>0</td>
+            </tr>
+            </tbody>
+          </table>
+          <div class="top-records-msg">Only showing top 100 records. Please export to view all records.</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="pull-left">
+          <div class="btn-group">
+            <div class="btn-group dropup">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Export <i
+                  class="fa fa-caret-up"></i>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">CSV</a></li>
+                <li><a href="#">Excel</a></li>
+              </ul>
+            </div>
+          </div>
+          <button class="btn btn-default" data-dismiss="modal">Print</button>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div id="student-certification-progress" class="modal fade modal-report" tabindex="-1" aria-hidden="false">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
@@ -5184,7 +5546,7 @@
         </div>
         <div class="dataTable-container">
           <div class="h3">Import Error Detail</div>
-          <table class="table  table-striped dataTable" id="certificationErrorDetail">
+          <table class="table table-striped dataTable" id="certificationErrorDetail">
             <thead>
             <tr class="table-row stripe">
               <th>Date</th>

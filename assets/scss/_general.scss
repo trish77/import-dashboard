@@ -621,7 +621,7 @@ div.dataTables_wrapper div.dataTables_length label {
   text-align: left;
   white-space: nowrap;
 }
-
+.supplementalImportProgressSummaryBottom,
 .suppMgrImportSuccessSummaryBottom,
 .suppMgrImportSuccessBottom,
 .suppMgrImportProgressSummaryBottom,
@@ -647,6 +647,9 @@ div.dataTables_wrapper div.dataTables_length label {
 .licenseImportErrorSummaryBottom,
 .licenseImportErrorDetailBottom,
 .licenseImportProgressSummaryBottom,
+.supervisorImportProgressSummaryBottom,
+.supervisorSuccessSummaryBottom,
+.supervisorSuccessBottom,
 .certificationErrorDetailBottom,
 .certificationErrorSummaryBottom,
 .certificationSuccessBottom,

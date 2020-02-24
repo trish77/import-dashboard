@@ -704,6 +704,59 @@ $(function () {
     });
   };
 
+  healthStream.supplementalImportProgressSummary = {};
+  healthStream.supplementalImportProgressSummary.resultsDataTable = function () {
+    var supplementalImportProgressSummaryTbl = $('#supplementalImportProgressSummary').DataTable({
+      "bSortClasses": false,
+      "paging": true,
+      "order": [
+        [0, "asc"]
+      ],
+      "dom": 'ft<"supplementalImportProgressSummaryBottom"rlip>',
+      "columnDefs": [{
+        "visible": false,
+        "targets": "hideOnLoad",
+      }, {
+        "orderable": false,
+        "targets": "unsortable"
+      }],
+      "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
+        }
+      },
+      "pageLength": 5
+    });
+    supplementalImportProgressSummaryTbl.columns().iterator('column', function (ctx, idx) {
+      $(supplementalImportProgressSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(supplementalImportProgressSummaryTbl);
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $('.SupplementalImportProgressSummaryHeader').html($("#supplementalImportProgressSummary_info").html());
+    }
+
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on('draw.dt', function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
   healthStream.suppMgrImportSuccess = {};
   healthStream.suppMgrImportSuccess.resultsDataTable = function () {
     var suppMgrImportSuccessTbl = $('#suppMgrImportSuccess').DataTable({
@@ -1244,6 +1297,168 @@ $(function () {
     });
   };
 
+  healthStream.supervisorImportProgressSummary = {};
+  healthStream.supervisorImportProgressSummary.resultsDataTable = function () {
+    var supervisorImportProgressSummaryTbl = $('#supervisorImportProgressSummary').DataTable({
+      "bSortClasses": false,
+      "paging": true,
+      "order": [
+        [0, "asc"]
+      ],
+      "dom": 'ft<"supervisorImportProgressSummaryBottom"rlip>',
+      "columnDefs": [{
+        "visible": false,
+        "targets": "hideOnLoad",
+      }, {
+        "orderable": false,
+        "targets": "unsortable"
+      }],
+      "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
+        }
+      },
+      "pageLength": 5
+    });
+
+    supervisorImportProgressSummaryTbl.columns().iterator('column', function (ctx, idx) {
+      $(supervisorImportProgressSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(supervisorImportProgressSummaryTbl);
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $('.SupervisorImportProgressSummaryHeader').html($("#supersisorImportProgressSummary_info").html());
+    }
+
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on('draw.dt', function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
+  healthStream.supervisorSuccessSummary = {};
+  healthStream.supervisorSuccessSummary.resultsDataTable = function () {
+    var supervisorSuccessSummaryTbl = $('#supervisorSuccessSummary').DataTable({
+      "bSortClasses": false,
+      "paging": true,
+      "order": [
+        [0, "asc"]
+      ],
+      "dom": 'ft<"supervisorSuccessSummaryBottom"rlip>',
+      "columnDefs": [{
+        "visible": false,
+        "targets": "hideOnLoad",
+      }, {
+        "orderable": false,
+        "targets": "unsortable"
+      }],
+      "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
+        }
+      },
+      "pageLength": 5
+    });
+
+    supervisorSuccessSummaryTbl.columns().iterator('column', function (ctx, idx) {
+      $(supervisorSuccessSummaryTbl.column(idx).header()).append('<span class="icon-sort"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(supervisorSuccessSummaryTbl);
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $('.SupervisorSuccessSummaryHeader').html($("#supervisorSuccessSummary_info").html());
+    }
+
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on('draw.dt', function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
+  healthStream.supervisorSuccess = {};
+  healthStream.supervisorSuccess.resultsDataTable = function () {
+    var supervisorSuccessTbl = $('#supervisorSuccess').DataTable({
+      "bSortClasses": false,
+      "paging": true,
+      "order": [
+        [0, "asc"]
+      ],
+      "dom": 'ft<"supervisorSuccessBottom"rlip>',
+      "columnDefs": [{
+        "visible": false,
+        "targets": "hideOnLoad",
+      }, {
+        "orderable": false,
+        "targets": "unsortable"
+      }],
+      "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+      language: {
+        search: "_INPUT_",
+        info: "Showing _START_ to _END_ of _MAX_ records",
+        searchPlaceholder: "Quick Search",
+        lengthMenu: "Show _MENU_ records",
+        paginate: {
+          previous: '<i class="icon-caret-left"></i>',
+          next: '<i class="icon-caret-right"></i>'
+        }
+      },
+      "pageLength": 5
+    });
+
+    supervisorSuccessTbl.columns().iterator('column', function (ctx, idx) {
+      $(supervisorSuccessTbl.column(idx).header()).append('<span class="icon-sort"/>');
+    });
+
+    expandMobileRow();
+    generateDynamicDataTitles();
+    customizeColumns(supervisorSuccessTbl);
+    keepDropDownMenuOpen();
+    updateTableHeaderFooter();
+
+    //place default info into Results header
+    function updateTableHeaderFooter() {
+      $(".dataTables_info").hide();
+      $('.SupervisorSuccessHeader').html($("#supervisorSuccess_info").html());
+    }
+
+    //reinitialize jquery when table is redrawn (pagination)
+    $(".dataTable").on('draw.dt', function () {
+      expandMobileRow();
+      generateDynamicDataTitles();
+      updateTableHeaderFooter();
+    });
+  };
+
   healthStream.licenseImportProgressSummary = {};
   healthStream.licenseImportProgressSummary.resultsDataTable = function () {
     var licenseImportProgressSummaryTbl = $('#licenseImportProgressSummary').DataTable({
@@ -1664,7 +1879,7 @@ $(function () {
     //place default info into Results header
     function updateTableHeaderFooter() {
       $(".dataTables_info").hide();
-      $('.certificationErrorSummaryHeader').html($("#certificationErrorSummary_info").html());
+      $('.CertificationErrorSummaryHeader').html($("#certificationErrorSummary_info").html());
     }
 
     //reinitialize jquery when table is redrawn (pagination)
@@ -1718,7 +1933,7 @@ $(function () {
     //place default info into Results header
     function updateTableHeaderFooter() {
       $(".dataTables_info").hide();
-      $('.certificationErrorDetailHeader').html($("#certificationErrorDetail_info").html());
+      $('.CertificationErrorDetailHeader').html($("#certificationErrorDetail_info").html());
     }
 
     //reinitialize jquery when table is redrawn (pagination)
@@ -1743,7 +1958,7 @@ $(function () {
     healthStream.jobFunctionErrorDetail.resultsDataTable();
     healthStream.jobFunctionProgressSummary.resultsDataTable();
     healthStream.jobFunctionSuccessSummary.resultsDataTable();
-
+    healthStream.supplementalImportProgressSummary.resultsDataTable();
     healthStream.suppMgrImportSuccessSummary.resultsDataTable();
     healthStream.suppMgrImportSuccess.resultsDataTable();
     healthStream.suppMgrImportErrorSummary.resultsDataTable();
@@ -1762,13 +1977,15 @@ $(function () {
     healthStream.licenseImportErrorSummary.resultsDataTable();
     healthStream.licenseImportErrorDetail.resultsDataTable();
 
+    healthStream.supervisorImportProgressSummary.resultsDataTable();
+    healthStream.supervisorSuccessSummary.resultsDataTable();
+    healthStream.supervisorSuccess.resultsDataTable();
+
     healthStream.certificationProgressSummary.resultsDataTable();
     healthStream.certificationSuccessSummary.resultsDataTable();
     healthStream.certificationSuccess.resultsDataTable();
     healthStream.certificationErrorSummary.resultsDataTable();
     healthStream.certificationErrorDetail.resultsDataTable();
-
-
 
   });
 
