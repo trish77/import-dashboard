@@ -1924,11 +1924,14 @@ $(function () {
       $(certificationErrorDetailTbl.column(idx).header()).append('<span class="icon-sort"/>');
     });
 
+
     expandMobileRow();
     generateDynamicDataTitles();
     customizeColumns(certificationErrorDetailTbl);
     keepDropDownMenuOpen();
     updateTableHeaderFooter();
+
+
 
     //place default info into Results header
     function updateTableHeaderFooter() {

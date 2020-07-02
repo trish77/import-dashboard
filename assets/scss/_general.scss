@@ -134,6 +134,7 @@ a:focus, :focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.f
 
 .icon-spinner {
   position: absolute;
+  font-size: 48px !important;
 
 }
 
@@ -579,8 +580,6 @@ table.dataTable thead .sorting_asc span.icon-sort:after {
   background-color: #09c;
   border-color: #09c;
   cursor: default;
-  /* margin-top:-3px; */
-
 }
 
 .pagination a,
@@ -600,7 +599,6 @@ table.dataTable thead .sorting_asc span.icon-sort:after {
   border: 1px solid #ddd;
   margin-left: -1px;
 }
-
 
 @media screen and (max-width: 767px) {
 
@@ -835,12 +833,13 @@ th {
   margin-right: 13px;
   color: #bbb;
   margin-top: 10px;
-  font-size: 20px !important;
+  font-size: 20px;
 }
 
 .text-small, .icon-asterisk {
   font-size: 11px !important;
 }
+
 
 .checkbox {
   margin: 10px;
@@ -853,6 +852,34 @@ th {
 #alertMessage, .savedForm {
   display: none;
 }
+
+#ph,
+.ph {
+  background: #fff url('../Images/logo-healthstream-large.png') 15px center no-repeat !important;
+  border-top: 3px solid #094579;
+  -webkit-print-color-adjust: exact;
+}
+
+#mb .nb, .mb .nb {
+  background: #094579;
+  border-top-color: #073761;
+}
+
+#inst, .inst {
+  padding-left: 7px;
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.App {
+  overflow-x: hidden;
+}
+
 
 /****************** custom fonts *****************/
 @font-face {

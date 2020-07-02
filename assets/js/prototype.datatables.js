@@ -25,8 +25,8 @@ function expandMobileRow(){
 
             $(this).find("a").html("Hide More Info");
             thisRow.children("td:nth-of-type(2) ~ td").css('display','block');
-            $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
-           $(thisRow).find('.actions-dropdown i').toggleClass('fa-caret-down fa-caret-up');
+            $(this).find('i').toggleClass('icon-caret-down icon-caret-up');
+           $(thisRow).find('.actions-dropdown i').toggleClass('icon-caret-down icon-caret-up');
 
             thisRow.children("td:nth-of-type(2) ~ td").not('.actions').removeClass('hidden-xs hidden-sm');
 
@@ -34,8 +34,8 @@ function expandMobileRow(){
         } else {
             $(this).find("a").html("View More Info");
             thisRow.children("td:nth-of-type(2) ~ td").css('display','none');
-            $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
-            $(thisRow).find('.actions-dropdown i').toggleClass('fa-caret-down fa-caret-up');
+            $(this).find('i').toggleClass('icon-caret-down icon-caret-up');
+            $(thisRow).find('.actions-dropdown i').toggleClass('icon-caret-down icon-caret-up');
 
 
         }
@@ -50,10 +50,10 @@ function expandMobileRow(){
             if($(window).width() != width){
                 thisRow.children("td:nth-of-type(3) ~ td").css('display','table-cell');
                 thisRow.children("td:nth-of-type(2) ~ td").addClass('hidden-xs hidden-sm');
-                $(thisRow).find('.expand-mobile-row i').addClass('fa-caret-down');
-                $(thisRow).find('.expand-mobile-row i').removeClass('fa-caret-up');
-                $(thisRow).find('.actions-dropdown i').addClass('fa-caret-down');
-                $(thisRow).find('.actions-dropdown i').removeClass('fa-caret-up');
+                $(thisRow).find('.expand-mobile-row i').addClass('icon-caret-down');
+                $(thisRow).find('.expand-mobile-row i').removeClass('icon-caret-up');
+                $(thisRow).find('.actions-dropdown i').addClass('icon-caret-down');
+                $(thisRow).find('.actions-dropdown i').removeClass('icon-caret-up');
                 $(".expand-mobile-row").find("a").html("View More Info");
         }
         });
@@ -121,9 +121,7 @@ function selectRowsOnClick(tableName) {
 function selectRowOnCheckboxChange(tableName){
     $(".checkbox").change(function() {
 
-
         var $checkbox = $(this);
-
 
         if ($checkbox.prop('checked')) {
             $checkbox.parents("tr").addClass("selected");
@@ -167,3 +165,119 @@ function keepDropDownMenuOpen() {
 }
 
 
+/* Formatting function for row details - modify as you need */
+function dataFormat(d) {
+    var result = '';
+    var hasChildren = false;
+    for (i = 0; i < d.length; i++) {
+
+        if (d[i].Col0 == "WORKED") shouldBeOrange = false;
+
+        result +=
+          '<table><tr style="background-color: ' + (shouldBeOrange == true ? '#ff9c59' : '') + '">' +
+          '<td></td>' +
+          '<td style="font-weight: ' + (d[i].Col0 == "WORKED" || d[i].Col0 == "OTHER" ? 'bold' : '') + '">' + d[i].Col0 + '</td>' +
+          '<td>' + d[i].Col1 + '</td>' +
+          '<td>' + d[i].Col2 + '</td>' +
+          '</tr></table>';
+
+        if (d[i].Col0 == "OTHER")
+            shouldBeOrange = true;
+
+        hasChildren = true;
+    }
+
+    if (!hasChildren)
+        result += '<tr><td>There are no items in this view.</td></tr>';
+
+    return $(result);
+}
+
+function ProcessTableVehicleDetailV2(id, tableData) {
+    if (!$.fn.dataTable.isDataTable('#' + id)) {
+        $('#' + id).DataTable({
+            data: tableData,
+            dom: 'Bfrtip',
+            buttons: [
+                'copy', 'csv', 'excelHtml5', 'pdfHtml5', 'print'
+            ],
+            columns: [{
+                "class": 'details-control',
+                "orderable": false,
+                "data": null,
+                "defaultContent": ''
+            },
+                {
+                    data: "Col0"
+                }
+            ],
+            ordering: false,
+            "scrollY": "400px",
+            "paging": false,
+            "searching": false,
+            "info": false,
+            'responsive': true,
+            "language": {
+                "emptyTable": "No Data"
+            },
+            "createdRow": function(row, data, index) {
+                if (data.Col0 === " " && data.Col1 === " " && data.Col2 === " ")
+                    $('td', row).eq(0).removeClass('details-control');
+            },
+            "render": function(data, type, full, meta) {
+                return full["Col0"] + "" + full["Col1"] + "" + full["Col2"];
+            },
+            "initComplete": function() {
+                $('.dataTables_scrollBody thead tr').addClass('hidden');
+                $('.dataTables_scrollBody thead th').addClass('hidden');
+                $('.dataTables_scrollBody tfoot tr').addClass('hidden');
+                $(".dataTables_scrollBody th").removeAttr('class');
+                $('.dataTables_scrollBody table thead').addClass('hidden');
+                $('.dataTables_wrapper table tfoot').addClass('hidden');
+            }
+        });
+
+        $('#' + id).DataTable().columns.adjust();
+
+        $('#' + id).on('click', 'td.details-control', function() {
+            var tr = $(this).parents('tr');
+            var table = $('#' + id).DataTable();
+            var row = table.row(tr);
+
+            if (row.child.isShown()) {
+                // This row is already open - close it
+                row.child.hide();
+                tr.removeClass('details');
+            } else {
+
+                // Open this row
+                row.child(dataFormat(row.data().detail)).show();
+                tr.addClass('details');
+            }
+        });
+
+        //$('#data_table_' + id).DataTable().$('tr', { "filter": "applied" }).addClass('odd');
+    }
+}
+$(document).ready(function() {
+    var TableContent = [{
+        Col0: "2019-03-09 05:10 AM - 2019-03-09 06:14 AM • - • Bothways: 1 enter • Spend Time: 01:04 [00:00] Active: 00:00 Travel: 01:03 Something Else: 01:00 - 0 OTHER",
+        Col1: "",
+        Col2: "",
+        detail: [{
+            Col0: "WORKED",
+            Col1: "",
+            Col2: ""
+        },
+            {
+                Col0: "05:10 AM",
+                Col1: "-",
+                Col2: "0 minutes"
+            }
+        ]
+    }];
+
+    setTimeout(function() {
+        ProcessTableVehicleDetailV2("example", TableContent);
+    }, 100);
+});

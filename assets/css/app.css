@@ -45,6 +45,12 @@
   width: 80% !important;
 }
 
+.alert-green {
+  color: #fff;
+  background-color: #0c9a0f;
+  border-color: rgba(16, 129, 30, 0.8);
+}
+
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -563,13 +569,13 @@ mark,
 
 @media (min-width: 768px) {
   .container {
-    max-width: 720px;
+    max-width: 900px;
   }
 }
 
 @media (min-width: 992px) {
   .container {
-    max-width: 960px;
+    max-width: 1060px;
   }
 }
 
@@ -595,13 +601,13 @@ mark,
 
 @media (min-width: 768px) {
   .container, .container-sm, .container-md {
-    max-width: 720px;
+    max-width: 900px;
   }
 }
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px;
+    max-width: 1060px;
   }
 }
 
@@ -8966,6 +8972,7 @@ a:focus, :focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.f
 
 .icon-spinner {
   position: absolute;
+  font-size: 48px !important;
 }
 
 .icon-edit, .icon-pencil, .icon-trash-o,
@@ -9398,7 +9405,6 @@ table.dataTable thead .sorting_asc span.icon-sort:after {
   background-color: #09c;
   border-color: #09c;
   cursor: default;
-  /* margin-top:-3px; */
 }
 
 .pagination a,
@@ -9647,7 +9653,7 @@ th {
   margin-right: 13px;
   color: #bbb;
   margin-top: 10px;
-  font-size: 20px !important;
+  font-size: 20px;
 }
 
 .text-small, .icon-asterisk {
@@ -9664,6 +9670,33 @@ th {
 
 #alertMessage, .savedForm {
   display: none;
+}
+
+#ph,
+.ph {
+  background: #fff url("../Images/logo-healthstream-large.png") 15px center no-repeat !important;
+  border-top: 3px solid #094579;
+  -webkit-print-color-adjust: exact;
+}
+
+#mb .nb, .mb .nb {
+  background: #094579;
+  border-top-color: #073761;
+}
+
+#inst, .inst {
+  padding-left: 7px;
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.App {
+  overflow-x: hidden;
 }
 
 /****************** custom fonts *****************/

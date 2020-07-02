@@ -23,7 +23,6 @@
   "homepage": "",
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "gijgo": "^1.9.13",
     "jquery": ">=3.4.0",
     "popper.js": "1.16.0"
   },

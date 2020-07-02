@@ -59,7 +59,7 @@ $theme-colors: map-merge(
     "primary": $primary,
     "secondary": $secondary,
     "success": $success,
-    "info": $info,
+   // "info": $info,
     "warning": $warning,
     "danger": $danger,
     "light": $light,
@@ -96,6 +96,14 @@ $h6-font-size: $font-size-base !default;
 $popover-font-size: $font-size-md !default;
 
 $font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+
+$container-max-widths: (
+        sm: 540px,
+        md: 900px,
+        lg: 1060px,
+        xl: 1140px
+) !default;
+
 
 .btn-outline-secondary {
   color: #6c757d;
@@ -144,4 +152,11 @@ $font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe 
 
 .w-80 {
   width: 80% !important;
+}
+
+
+.alert-green {
+  color: #fff;
+  background-color: #0c9a0f;
+  border-color: rgba(16, 129, 30, 0.8);
 }
